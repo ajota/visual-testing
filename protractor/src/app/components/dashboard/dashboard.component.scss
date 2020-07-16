@@ -1,0 +1,90 @@
+@import '../../../assets/bootstrap/variables';
+@import '../../../assets/bootstrap/index.scss';
+
+.sc-update-data{
+  text-align: center;
+  display: inline-block;
+  margin-left: 0;
+  &--content{
+    display: inline-block;
+    margin-left: 0;
+    text-align: center;
+  }
+  &--container{
+    display: inline-block;
+    width: 75%;
+  }
+  &--title{
+    font-size: $sc-font-size-lg;
+    color: #007AA4;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    display: block;
+  }
+  &--paragraph{
+    font-weight: $sc-font-size-xxmd;
+    color: #535353;
+    font-weight: 400;
+  }
+  &--movile{
+    margin-right: 10%;
+    margin-left: 5%;
+    height: 37px;
+  }
+  &--email{
+    margin-left: 5%;
+    margin-right: 7%;
+    height: 24px;
+  }
+}
+
+
+.sc-card-list{
+  text-align: center;
+  height: 50px;
+  //block
+  display: block;
+  width: 100%;
+  //style
+  color: #575757;
+  font-size: $sc-font-size-md;
+  white-space: normal;
+  text-align: justify;
+  //positioning
+  vertical-align: top;
+  margin-bottom: 0%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  margin-top: 5%;
+  &--movile {
+    margin-top: 10%;
+    padding-top: 2.4%;
+  }
+  &--email{
+    margin-bottom: 15%;
+    padding-top: 5%;
+  }
+}
+
+
+
+.sc-navbar {
+  padding: 0;
+
+  .nav-link{
+    h6 { margin-bottom: 0; }
+    &:hover h6{ font-weight: bolder; }
+  }
+
+
+  //status
+  .is-activate {
+    border-bottom: 2px solid#a7bf30;
+    font-weight: bold;
+  }
+}
+
+::ng-deep .sc-controls.is-error.is-error span {
+  color: $danger !important;
+}

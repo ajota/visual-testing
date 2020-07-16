@@ -1,0 +1,104 @@
+@import 'src/assets/bootstrap/variables';
+
+$sc-icon-size: 2.5rem;
+$sc-msg-background: #ebf0f6;
+$sc-color-name: #234699;
+
+.sc-chatbot-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sc-chatbot-header {
+  background-color: #007AA4;
+  color: white;
+  width: 100%;
+  height: 4em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem;
+  margin-left: 0;
+  top: 0;
+  &__user-icon {
+    border-radius: 50%;
+    width:  $sc-icon-size;
+    height: $sc-icon-size;
+    background-image: url('../../../../assets/img/favicon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__user-name {
+    margin-left: 1%;
+  }
+}
+
+.sc-chat-thread {
+  height: 80%;
+  overflow: auto;
+  max-width: inherit;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 2%;
+}
+
+.sc-chat-reply {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  &__input-wrapper {
+    width: 87%;
+    height: 100%;
+  }
+  &__input-msg {
+    text-align: left;
+    border-radius: 30px;
+    border: solid 1px lightgray;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+  }
+  .sc-field__validation--chat {
+    position: relative;
+    bottom: 20px;
+  }
+  &__error-true{
+    border-color: red;
+  }
+}
+
+.sc-btn{
+  &__btn-send {
+    background: url('src/assets/img/icons/icon-send.svg');
+    background-size: 2.7rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  &__btn-skip{
+    border-radius: 0.75rem;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+  }
+}
+
+.chat-actions {
+  margin-top: 2%;
+  margin-left: 13%;
+  @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+    margin-left: 10%;
+  }
+  @media screen and (max-width: map-get($grid-breakpoints, 'md' )) {
+    margin-left: 12%;
+  }
+}
+
+.modal-actions{
+  &__reference{
+    margin-top: 8%
+  }
+}

@@ -1,0 +1,8 @@
+<app-loading></app-loading>
+<app-sc-download-app [openWhenAppInit]="true" ></app-sc-download-app>
+<div class="{{ stickyClass | async }}">
+  <div class="sc-main-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-sc-notify></app-sc-notify>

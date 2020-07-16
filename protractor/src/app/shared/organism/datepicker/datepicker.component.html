@@ -1,0 +1,23 @@
+<div class="sc-datepicker-container m-1">
+  <div class="text-center my-2">
+      <span class="sc-text--xxmd sc-datepicker-container__title">Ingrese una fecha</span>
+  </div>
+  <form>
+    <div class="form-group">
+      <div class="input-group">
+          <div class="input-group-prepend">
+              <button class="btn sc-datepicker-container--edit" type="button" (click)="d.toggle()"></button>
+          </div>
+        <input class="form-control sc-datepicker-container__input" placeholder="AAAA-MM-DD"
+               name="dp" [(ngModel)]="date" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (dateSelect)="isEmpty()"
+                [minDate]="dateInit" [maxDate]="dateEnd" readonly>
+        <div class="input-group-append">
+          <button class="btn sc-datepicker-container--icon" (click)="d.toggle()" type="button" ></button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="text-center my-4">
+    <button class="btn btn-primary" (click)="submitDate()" [disabled]="disable">Enviar</button>
+  </div>
+</div>

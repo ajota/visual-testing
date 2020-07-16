@@ -1,0 +1,80 @@
+$animationTime: $sc-loading-animation-time; //3.5
+$imagesAmount: $sc-loading-imgs-amount;//4
+
+@keyframes bounceUp {
+    0%{
+        transform: scale(0.05);
+        border-color: rgba(255,255,255, 1);
+    }
+    70%{ border-color: rgba(255,255,255, 0); }
+    80%{ transform: rotate(8deg) translateY(-10px); }
+    90%{ transform: rotate(-8deg) translateY(-10px); }
+    100%{ transform: scale(0.05); }
+}
+
+@keyframes sliderLeft{
+    100%{  background-position: 100%; }
+}
+
+@mixin curtainApearence () {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+
+body{ padding: 0;  margin: 0; }
+
+
+.sc-loader{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: $primary-deg;
+    z-index: 1100;
+
+    &__curtain{
+        display: inline-block;
+        vertical-align: middle;
+        width: 0%;
+        height: 100%;
+    }
+
+    &__container{
+        display: inline-block;
+        position: relative;
+    }
+
+    &__icons{
+        @include curtainApearence();
+        overflow: hidden;
+        border-style: solid;
+        border-width: 0;
+        padding: 2px;
+        animation: bounceUp ( $animationTime / $imagesAmount ) cubic-bezier(.66, .01, .21, 1.44) infinite;
+
+        &__image{
+            width: 100%;
+            height: 100%;
+            background-image: url( './assets/img/loading-icons.png' );
+            background-size: auto 100%;
+            animation: sliderLeft $animationTime steps( $imagesAmount ) infinite;
+        }
+    }
+
+    &__text{
+        color: white;
+        position: absolute;
+        left: -100%;
+        width: 300%;
+        &--small{
+            display: block;
+            font-size: 80%;
+        }
+    }
+}
+
+
+

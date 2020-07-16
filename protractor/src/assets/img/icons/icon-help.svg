@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="13" viewBox="0 0 8 13">
+  <defs>
+    <clipPath id="clip-ayuda">
+      <rect width="8" height="13"/>
+    </clipPath>
+  </defs>
+  <g id="ayuda" clip-path="url(#clip-ayuda)">
+    <g id="Grupo_9358" data-name="Grupo 9358" transform="translate(-250.007 -570.311)">
+      <ellipse id="Elipse_426" data-name="Elipse 426" cx="0.972" cy="0.972" rx="0.972" ry="0.972" transform="translate(253.316 581.129)" fill="#535353"/>
+      <path id="Trazado_5587" data-name="Trazado 5587" d="M336.833,67.314a.921.921,0,0,1-.922-.922,4.022,4.022,0,0,1,1.922-3.514c.686-.528.99-.791.977-1.5-.023-1.2-1.39-1.511-2.132-1.511h-.023c-.8.007-2.158.354-2.158,1.611a.922.922,0,0,1-1.844,0c0-2.245,2-3.437,3.985-3.455h.045c1.951,0,3.929,1.134,3.969,3.32a3.453,3.453,0,0,1-1.7,3,2.232,2.232,0,0,0-1.2,2.053A.922.922,0,0,1,336.833,67.314Z" transform="translate(-82.646 512.655)" fill="#535353"/>
+    </g>
+  </g>
+</svg>

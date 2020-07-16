@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="69" viewBox="0 0 64 69">
+  <defs>
+    <filter id="Elipse_316" x="-8" y="-5" width="80" height="80" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-ubicacion">
+      <rect width="64" height="69"/>
+    </clipPath>
+  </defs>
+  <g id="ubicacion" clip-path="url(#clip-ubicacion)">
+    <g id="Grupo_9297" data-name="Grupo 9297" transform="translate(-238 -2210.476)">
+      <g id="Grupo_8445" data-name="Grupo 8445" transform="translate(239 2211.476)">
+        <g id="Grupo_3947" data-name="Grupo 3947" transform="translate(0 0)">
+          <g transform="matrix(1, 0, 0, 1, -1, -1)" filter="url(#Elipse_316)">
+            <circle id="Elipse_316-2" data-name="Elipse 316" cx="31" cy="31" r="31" transform="translate(1 1)" fill="#007aa4"/>
+          </g>
+        </g>
+      </g>
+      <g id="locator" transform="translate(261.095 2230.687)">
+        <g id="Grupo_8446" data-name="Grupo 8446" transform="translate(-1.45 -3.212)">
+          <path id="Trazado_5220" data-name="Trazado 5220" d="M138.793,153.781c-3.388,0-10.793-10.2-10.793-17.869,0-6.568,4.842-11.913,10.793-11.913s10.793,5.344,10.793,11.913C149.586,143.585,142.18,153.781,138.793,153.781Zm0-26.8c-4.463,0-8.095,4.008-8.095,8.934,0,6.5,6.384,14.55,8.095,14.888,1.711-.337,8.095-8.383,8.095-14.888C146.887,130.986,143.256,126.978,138.793,126.978Z" transform="translate(-128 -124)" fill="#fff"/>
+        </g>
+        <g id="Grupo_8447" data-name="Grupo 8447" transform="translate(5.256 5.256)">
+          <path id="Trazado_5221" data-name="Trazado 5221" d="M141.088,141.175a4.088,4.088,0,1,1,4.088-4.088A4.092,4.092,0,0,1,141.088,141.175Zm0-5.84a1.752,1.752,0,1,0,1.752,1.752A1.754,1.754,0,0,0,141.088,135.336Z" transform="translate(-137 -133)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

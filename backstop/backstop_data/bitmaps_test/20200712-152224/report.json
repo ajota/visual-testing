@@ -1,0 +1,411 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Loading_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Loading_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Loading_0_document_0_phone.png",
+        "label": "Testing Loading",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Loading_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Loading_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Loading_0_document_1_tablet.png",
+        "label": "Testing Loading",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 38
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Loading_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Loading_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Loading_0_document_2_Desktop.png",
+        "label": "Testing Loading",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_0_document_0_phone.png",
+        "label": "Testing Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_0_document_1_tablet.png",
+        "label": "Testing Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_0_document_2_Desktop.png",
+        "label": "Testing Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_1_0_document_0_phone.png",
+        "label": "Testing Homepage hover btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_1_0_document_1_tablet.png",
+        "label": "Testing Homepage hover btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.54",
+          "analysisTime": 38
+        },
+        "diffImage": "..\\bitmaps_test\\20200712-152224\\failed_diff_testing_backstop_Testing_Homepage_hover_btn_1_0_document_1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_1_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_1_0_document_2_Desktop.png",
+        "label": "Testing Homepage hover btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_2_0_document_0_phone.png",
+        "label": "Testing Homepage hover btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_2_0_document_1_tablet.png",
+        "label": "Testing Homepage hover btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_hover_btn_2_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_hover_btn_2_0_document_2_Desktop.png",
+        "label": "Testing Homepage hover btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_1_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_1_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_1_0_document_0_phone.png",
+        "label": "Testing Homepage click btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_1_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_1_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_1_0_document_1_tablet.png",
+        "label": "Testing Homepage click btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_1_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_1_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_1_0_document_2_Desktop.png",
+        "label": "Testing Homepage click btn 1",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_2_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_2_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_2_0_document_0_phone.png",
+        "label": "Testing Homepage click btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_2_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_2_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_2_0_document_1_tablet.png",
+        "label": "Testing Homepage click btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\testing_backstop_Testing_Homepage_click_btn_2_0_document_2_Desktop.png",
+        "test": "..\\bitmaps_test\\20200712-152224\\testing_backstop_Testing_Homepage_click_btn_2_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "testing_backstop_Testing_Homepage_click_btn_2_0_document_2_Desktop.png",
+        "label": "Testing Homepage click btn 2",
+        "misMatchThreshold": 0.1,
+        "url": "https://personas.credinet.co",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "testing_backstop"
+}

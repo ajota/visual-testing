@@ -1,0 +1,56 @@
+<div class="sc-options d-flex align-items-start">
+  <div [ngSwitch]="nameQuestion">
+    <div *ngSwitchCase="'gender'">
+      <button
+        class="btn sc-options__btn"
+        value="M"
+        (click)="sendOption.emit($event.target.value)"
+      >
+        M</button
+      >&nbsp;
+      <button
+        class="btn sc-options__btn"
+        value="F"
+        (click)="sendOption.emit($event.target.value)"
+      >
+        F
+      </button>
+    </div>
+    <div *ngSwitchCase="'civilStatus'">
+      <div *ngIf="type !== '_commandAgent:'">
+        <div>
+          <button
+            class="btn sc-options__btn"
+            value="Soltero"
+            (click)="sendOption.emit($event.target.value)"
+          >
+            Soltero</button
+          >&nbsp;
+          <button
+            class="btn sc-options__btn"
+            value="Casado"
+            (click)="sendOption.emit($event.target.value)"
+          >
+            Casado
+          </button>
+        </div>
+        <div class="mt-1">
+          <button
+            class="btn sc-options__btn"
+            value="Viudo"
+            (click)="sendOption.emit($event.target.value)"
+          >
+            Viudo</button
+          >&nbsp;
+          <button
+            class="btn sc-options__btn"
+            value="Union Libre"
+            (click)="sendOption.emit($event.target.value)"
+          >
+            Union Libre
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

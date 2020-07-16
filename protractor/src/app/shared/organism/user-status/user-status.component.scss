@@ -1,0 +1,294 @@
+@import '../../../../assets/bootstrap/variables';
+@import '../../../../assets/bootstrap/sc-mixins';
+
+
+$background-color: #f8f8f8;
+
+.sc-info-client {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  color: $primary;
+  margin-left: 28%;
+  vertical-align: middle;
+
+  @media screen and (max-width: map-get( $grid-breakpoints, 'lg' )) {
+    width: 58%;
+    margin-left: 7%;
+  }
+
+  &__fullname {
+    display: inline;
+    line-height: 1;
+  }
+
+  &__salutation {
+    line-height: 1.5;
+    @include sc-title-primary($sc-font-size-xlg);
+  }
+
+  &__fullname__names {
+    display: block;
+    @include sc-title-primary($sc-font-size-lg);
+
+    &:last-child {
+      margin-bottom: 2%;
+    }
+  }
+
+  &__document {
+    font-size: $sc-font-size-xmd;
+  }
+}
+
+.sc-client-amount {
+  line-height: 1.06;
+  font-weight: bold;
+
+  &__title {
+    display: inline-block;
+    width: 100%;
+    font-size: $sc-font-size-xxmd;
+    font-weight: 400;
+  }
+
+  &--available {
+    padding-top: 1%;
+    color: #1a7a03;
+  }
+
+  &--total {
+    padding-bottom: 1%;
+    color: $primary;
+  }
+
+  &--negated{
+    text-align: center;
+    padding: 4%;
+    &__text{
+      display: inline-block;
+      vertical-align: middle;
+      color: $primary;
+      font-size: $sc-font-size-xmd;
+      width: 78%;
+      margin-left: 8%;
+      text-align: left;
+      @media screen and (max-width: map-get($grid-breakpoints, 'md') ) {
+        font-size: $sc-font-size-md;
+      }
+    }
+  }
+
+  &--empty{
+    text-align: center;
+    padding: 6%;
+
+    &__text{
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba($gray-400, .8);
+      letter-spacing: -1px;
+      line-height: $line-heignt-sm;
+      @media screen and (max-width: map-get($grid-breakpoints, 'md') ) {
+        font-size: $sc-font-size-md;
+      }
+    }
+    &__text-clock{
+      display: inline-block;
+      vertical-align: middle;
+      color: #2B90B2;
+      line-height: $line-heignt-sm;
+      width: 75%;
+      @media screen and (max-width: map-get($grid-breakpoints, 'md') ) {
+        font-size: $sc-font-size-md;
+      }
+    }
+  }
+
+  &--icon{
+    width: 18%;
+    margin-right: 7%;
+    @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+      padding-top: 4%;
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, 'md') ) {
+      padding-top: 0%;
+      width: 29%;
+    }
+  }
+
+  &--icon-clock{
+    width: 18%;
+    margin-right: 7%;
+    height: 35px;
+    @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+      padding-top: 4%;
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, 'md') ) {
+      padding-top: 0%;
+      width: 29%;
+    }
+  }
+
+  hr {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border: 1px solid;
+    color: #a2b4cc;
+  }
+}
+
+.sc-client-state {
+  color: #1a7a03;
+  font-weight: bold;
+  width: 22%;
+  height: 100%;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+    width: 100%;
+    height: auto;
+    top: 70%;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '';
+    background-color: #1a7a03;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+      content: '';
+      width: 100%;
+      height: 40%;
+      margin-top: 1%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 0px 0 10px 10px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    padding-right: 27%;
+    position: absolute;
+    right: 20%;
+    line-height: 1;
+    bottom: 10%;
+    font-size: $sc-font-size-xxmd;
+
+    @media screen and ( max-width: map-get($grid-breakpoints, 'lg') ){
+      position: static;
+      padding-right: 5%;
+      margin-bottom: 4%;
+    }
+  }
+
+  &--negated{
+    color: #BDBDBD;
+    &:after{
+      background-color: #BDBDBD;
+    }
+  }
+
+  &--pending{
+    color: #FF8800;
+    &:after{
+      background-color: #FF8800;
+    }
+  }
+}
+
+.sc-dashboard-row {
+  margin-bottom: 1%;
+
+  @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+    .sc-panel {
+      // margin-bottom: 2%;
+
+      &--list {
+        text-align: center;
+      }
+
+      &__title {
+        display: inline;
+      }
+
+      &__img {
+        width: 30%;
+        padding-top: 12%;
+        padding-bottom: 12%;
+      }
+    }
+
+    .sc-credit {
+      display: none;
+
+      &__true {
+        .sc-panel--list {
+          text-align: left;
+        }
+
+        display: contents;
+        text-align: left;
+      }
+    }
+  }
+}
+
+
+.sc-picture{
+  &__profile{
+    //block
+    min-width: 24%;
+    //alignment
+    padding-right: 2%;
+    //positioning
+    position: absolute;
+    // right: 0;
+    //style
+    white-space: nowrap;
+    font-size: $sc-font-size-md;
+    font-weight: bold;
+    color: $primary;
+
+    &__photo{
+      display: inline-block;
+      width: 55%;
+      padding-right: 6%;
+      margin-right: 15%;
+      img {
+        width: 90px;
+        margin-top: -50% ;
+        margin-left: auto;
+        @media screen and (max-width: map-get($grid-breakpoints, 'xl' )) {
+          width: 78px;
+          height: 78px;
+          margin-top: -50%;
+          margin-left: auto;
+        }
+      }
+      picture {
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        padding: 50% 0;
+        vertical-align: middle;
+        border-radius: 50%;
+      }
+
+      &--landscape img{
+        height: 80px;
+        @media screen and (max-width: map-get($grid-breakpoints, 'xl' )) {
+          height: 77px;
+        }
+      }
+    }
+  }
+}
+

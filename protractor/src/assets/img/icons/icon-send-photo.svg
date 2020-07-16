@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-enviar_foto">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="enviar_foto" data-name="enviar foto" clip-path="url(#clip-enviar_foto)">
+    <path id="Trazado_2618" data-name="Trazado 2618" d="M886.916,665.656a1.02,1.02,0,0,0-1.1-.21l-17.132,7.138a1.02,1.02,0,0,0,.013,1.889l6.111,2.444L873.8,680.6a1.02,1.02,0,0,0,1.958.577l.011-.041.571-2.1,2.417,5.119a1.019,1.019,0,0,0,.922.584h.042a1.021,1.021,0,0,0,.912-.66l6.526-17.336A1.022,1.022,0,0,0,886.916,665.656Zm-7.342,15.457-2.187-4.628,3.2-3.03a1.019,1.019,0,1,0-1.4-1.48l-3.341,3.165-4.067-1.628,12.649-5.271Z" transform="translate(-865.054 -662.368)" fill="#fff"/>
+  </g>
+</svg>

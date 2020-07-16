@@ -1,0 +1,53 @@
+<div class="sc-family-reference">
+  <div class="sc-family-reference__title text-center">
+    <span class="sc-text--xxmd  ">{{'lbl_tittle_head_action_bar_family_reference' | mapConfigLang}}</span>
+  </div>
+  <div class="sc-family-reference__form">
+    <form
+    [formGroup]="formFamilyReference"
+    (ngSubmit)="onSubmitForm()"
+    >
+      <div class="my-3">
+        <sc-control
+          [form]="formFamilyReference"
+          name="name"
+          type="text"
+          theme="default-form"
+          label="txt_answer_key_name_reference"
+          licon="sc-icon--name"
+          [msgValidation]="{ pattern: 'msj_error_answer_empty' }"
+        >
+        </sc-control>
+      </div>
+      <div class="my-3">
+        <sc-control
+          [form]="formFamilyReference"
+          name="phone"
+          type="text"
+          theme="default-form"
+          label="lbl_answer_key_phone_reference"
+          licon="sc-icon--phone"
+          [msgValidation]="{ required: 'msj_error_answer_empty', pattern: 'error_msj_update_phone_number' }"
+          (valueChange) = "validatePhone($event)"
+        >
+        </sc-control>
+      </div>
+      <div class="form-group text-center my-3 py-3">
+        <select
+          class="form-control sc-family-reference__select"
+          formControlName="relationship"
+        >
+        <option *ngFor="let item of selectOptions" [value]="item">{{item}}</option>
+        </select>
+      </div>
+      <div class="text-center">
+          <button
+          class="btn btn-primary sc-family-reference--send"
+          type="submit"
+          [disabled]="!(formFamilyReference.valid && this.relationship.value != this.selectOptions[0])"
+        [innerHTML]="'btn_login_send' | mapConfigBase">
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

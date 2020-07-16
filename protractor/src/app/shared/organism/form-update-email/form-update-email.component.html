@@ -1,0 +1,42 @@
+<div class="card sc-card-container mx-auto">
+  <div class="text-center">
+    <h1 class="text-primary sc-card-container__title mb-xs-2 qa-title-register" [innerHTML]="'lbl_tittle_update_email' | mapConfigLang"></h1>
+    <span class="sc-card-container__subtitle qa-subtitle-register" [innerHTML]="'lbl_update_email_instructions' | mapConfigLang"></span>
+  </div>
+  <form class="sc-card-content"
+    [formGroup]="formUpdateMail"
+    (ngSubmit)="onSubmitForm()">
+    <div class="my-5">
+      <sc-control
+        [form]="formUpdateMail"
+        name="email"
+        type="email"
+        theme="default-form"
+        label="lbl_update_email_new_email"
+        (valueChange)="verify_email.updateValueAndValidity()"
+        [msgValidation]="{ pattern: 'msj_error_invalid_email_sign_up' }"
+      >
+      </sc-control>
+    </div>
+    <div class="my-5">
+      <sc-control
+        [form]="formUpdateMail"
+        name="verify_email"
+        type="email"
+        theme="default-form"
+        label="lbl_update_email_confirm_email"
+        [msgValidation]="{emailMatch: 'msj_error_no_match_email' }"
+      >
+      </sc-control>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-outline-primary sc-user-control--btn-back mr-xs-1"  [routerLink]="['/dashboard']" [queryParams]="{validationType:'updateData'}">
+        {{'btn_back' | mapConfigBase}}
+      </a>
+      <button class="btn btn-primary sc-card-content--btn-form qa-btn-register ml-xs-2"
+      type="submit"
+      [disabled]="!formUpdateMail.valid">
+        {{'lbl_continue' | mapConfigLang}}</button>
+    </div>
+  </form>
+</div>

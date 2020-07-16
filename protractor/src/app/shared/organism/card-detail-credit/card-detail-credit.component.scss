@@ -1,0 +1,88 @@
+@import '../../../../assets/bootstrap/variables';
+
+$background-color: #f8f8f8;
+
+.sc-detail-content {
+  width: 100%;
+
+  &__detail-credit {
+    width: 100%;
+  }
+
+  &__history-credit {
+    box-shadow: 1px 1px 8px #00000029;
+    width: 33%;
+    background-color: $background-color;
+  }
+
+  &__payment-credit {
+    .card {
+      border-color: $sc-card-border;
+      width: 260px;
+      height: 108px;
+      margin-right: 94px !important;
+    }
+  }
+
+  &--detail-title {
+    color: $primary;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+  &--name-credit {
+    color: $primary;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &--normal-text {
+    font-size: 18px;
+    color: $primary;
+  }
+
+  &--small-text {
+    color: $primary;
+    font-size: 13px;
+  }
+
+  &--medium-text {
+    color: $primary;
+    font-size: 16px;
+  }
+
+  &--large-text {
+    color: $primary;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &--normal-link {
+    color: $primary;
+    font-size: 15px;
+    text-decoration-line: underline;
+  }
+
+  &--btn-pay {
+    width: 168px;
+    height: 41px;
+    border-radius: 6px;
+  }
+}
+
+.text-dark {
+  color: #535353;
+}
+
+.text-purple{
+  color: $purple;
+}
+
+hr {
+  width: 90%;
+  border: 0.5px solid;
+  color: #A2B4CC;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}

@@ -1,0 +1,30 @@
+<div #backdrop class="sc-backdrop sc-backdrop--{{type}}" *ngIf="showNotify" (click)="close()" (keydown.esc)="close()" tabindex="0"></div>
+<div class="sc-notify" >
+  <div #notify class="card sc-card-container sc-card-container--notify col-xs-9 col-sm-6 col-md-4 col-lg-4 col-xl-4" [ngClass]="{'hide': !showNotify }">
+    <div class="card-body">
+      <span class="card-body__close" (click)="close()" *ngIf="!hasAccept"> &times; </span>
+      <div class="sc-icon {{ icon$ | async}}"></div>
+      <h1 class="sc-card-container__title sc-card-container__title--{{type$ | async }} qa-title-notify">
+        {{ title$ | async }}
+      </h1>
+      <p class="sc-card-container__content qa-notify-content">
+          {{ message$ | async }}
+      </p>
+
+      <hr class="sc-divider-line" *ngIf="type === 'noCamera'" >
+      <h1 class="sc-card-container__title sc-card-container__title--{{type$ | async }} qa-title-notify">
+          {{ subtitle$ | async }}
+      </h1>
+      <div class="sc-icon {{ icon2$ | async}}"></div>
+      <div class="sc-icon {{ icon3$ | async}}"></div>
+    </div>
+    <div class="card-footer sc-card-container__footer sc-card-container__footer--small d-flex flex-row  justify-content-center">
+      <button type="button" class="btn btn-outline-primary sc-btn-lg qa-notify-btn-cancel mx-2" (click)="close()" *ngIf="hasCancel">
+        {{btnCancelName}}
+      </button>
+      <button type="button" class="btn btn-primary sc-btn-lg qa-notify-btn-accept "  (click)="accept()" *ngIf="hasAccept">
+        {{btnAcceptName}}
+      </button>
+    </div>
+  </div>
+</div>

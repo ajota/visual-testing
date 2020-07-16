@@ -1,0 +1,75 @@
+@import '../../../../assets/bootstrap/variables';
+
+$credit-success: #98BF11;
+$credit-nullified: #97D2FF;
+
+.sc-card-list{
+  border-color: $sc-card-border;
+  border-radius: 6px;
+  border-right: 8px solid $credit-success;
+
+  &--nullified{
+    border-right-color: $credit-nullified;
+  }
+  cursor: pointer;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  &--title{
+    color: #575757;
+   font-size: 16px;
+   text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &--content{
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &--info{
+    color: #575757;
+    font-size: 13px;
+  }
+  &--large-text{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &--small-text{
+    display: grid;
+    font-size: $font-size-sm;
+    color: $credit-success;
+    align-self: flex-end;
+    margin-left: 3%;
+    &--nullified{
+      color: $credit-nullified;
+    }
+    img {
+     padding-bottom: 6%;
+     padding-left: 80%;
+    }
+  }
+
+  &--disabled{
+    pointer-events: none;
+  }
+
+  &--normal-text{
+    font-size: 14px;
+  }
+
+  &--btn-receipt{
+    width: 129px;
+    height: 27px;
+    border: 1px #A2B4CC solid;
+    font-size: 13px;
+    margin: 6px 35px;
+  }
+
+  //states
+  &:hover {
+   background-color: #E5E8EC;
+   text-decoration: none;
+  }
+}
+

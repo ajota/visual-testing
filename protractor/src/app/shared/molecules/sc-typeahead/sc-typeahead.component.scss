@@ -1,0 +1,21 @@
+@import '../../../../assets/bootstrap/variables';
+
+.sc-control{
+  &--icon-search{
+    background-image: url('../../../../assets/img/icons/icon-location.svg');
+    text-align: center;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0.25rem;
+  }
+}
+
+::ng-deep .dropdown-item.active {
+  background-color: $primary;
+}
+
+ ::ng-deep .dropdown-menu.show {
+  max-height: 300px ;
+  overflow-y: auto ;
+}

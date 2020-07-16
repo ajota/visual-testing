@@ -1,0 +1,136 @@
+<div class="sc-chatbot-container">
+  <div
+    class="sc-chatbot-header flex-row align-items-center d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex"
+  >
+    <div class="sc-chatbot-header__user-icon"></div>
+    <div class="sc-chatbot-header__user-name">
+      <span
+        class="text-center"
+        [innerHTML]="'lbl_company_title' | mapConfigBase"
+      ></span>
+    </div>
+  </div>
+  <div #thread class="sc-chat-thread d-flex flex-column">
+    <ng-container *ngFor="let item of (chat$ | async); last as isLast">
+      <app-sc-message
+        [msg]="item.message"
+        [name]="item.name"
+        [data]="item"
+        (actionResponse)="showModalType($event); modal.open()"
+        (editResponse)="resendQuestion($event)"
+        [last]="isLast"
+      ></app-sc-message>
+      <div *ngIf="item.name" class="chat-actions">
+        <app-sc-btn-options
+          (sendOption)="responseMsg = $event; sendResponse()"
+          [question]="item.question"
+          [type]="item.type"
+        ></app-sc-btn-options>
+      </div>
+    </ng-container>
+  </div>
+  <div class="sc-chat-reply">
+    <div class="mx-2">
+      <button
+        class="btn btn-primary sc-btn__btn-skip sc-text--bold"
+        [hidden]="!isOptional"
+        (click)="skipQuestion()"
+      >
+        {{ "lbl_skip_question" | mapConfigLang }}
+      </button>
+    </div>
+    <div class="sc-chat-reply__input-wrapper">
+      <div *ngIf="showErrorResponse" class="invalid-feedback sc-field__validation sc-field__validation--chat my-2">
+        <img
+          src="../../../../assets/img/icons/icon-validation-error.png"
+          class="mr-1"
+          alt=""
+        />
+        <span class="sc-field__val-text sc-text--bold">{{
+          this.inputChatRules?.message
+        }}</span>
+      </div>
+      <div class="sc-chat-reply__input-msg sc-chat-reply__error-{{showErrorResponse}}">
+        <input
+          [placeholder]="
+            inputChatRules?.placeholder ? inputChatRules?.placeholder : ''
+          "
+          [type]="inputChatRules?.type"
+          class="form-control"
+          [(ngModel)]="responseMsg"
+          (keydown.enter)="sendResponse()"
+          [disabled]="enableInputResponse"
+        />
+      </div>
+    </div>
+    <button
+    [ngClass]="{'mt-2': showErrorResponse}"
+      class="btn sc-btn__btn-send"
+      (click)="sendResponse()"
+      [disabled]="enableInputResponse"
+    ></button>
+  </div>
+</div>
+<app-sc-modal [embebed]="true" [addClass]="'col-6 px-0'" #modal>
+  <div [ngSwitch]="actionType">
+    <div *ngSwitchCase="typeQuestion.location">
+      <app-location-picker
+        (sendLocation)="responseMsg = $event; sendResponse(); modal.close()"
+      ></app-location-picker>
+    </div>
+    <div *ngSwitchCase="typeQuestion.fileImage">
+      <app-camera
+        (eventSendPhoto)="modal.close(); $event && sendPhoto($event)"
+        (cameraError)="modal.close(); alertCameraError($event)"
+      ></app-camera>
+    </div>
+    <div *ngSwitchCase="typeQuestion.calendar">
+      <app-datepicker
+        [dateRules]="inputChatRules"
+        (eventSendDate)="
+          responseMsg = formatDate($event); sendResponse(); modal.close()
+        "
+      >
+      </app-datepicker>
+    </div>
+    <div *ngSwitchCase="typeQuestion.familyReferece">
+      <app-form-family-reference
+        (eventSubmitForm)="
+          responseMsg = formatFamilyReference($event);
+          sendResponse();
+          modal.close()
+        "
+        [listOptions]="lastMessage"
+        [listCities]="listCities"
+      ></app-form-family-reference>
+    </div>
+    <div
+      *ngSwitchCase="typeQuestion.personalReference"
+      class="modal-actions__reference"
+    >
+      <app-form-personal-reference
+        (eventSubmitForm)="
+          responseMsg = formatFamilyReference($event);
+          sendResponse();
+          modal.close()
+        "
+        [listOptions]="lastMessage"
+        [listCities]="listCities"
+      ></app-form-personal-reference>
+    </div>
+    <div
+      *ngSwitchCase="typeQuestion.jobReference"
+      class="modal-actions__reference"
+    >
+      <app-form-job-reference
+        (eventSubmitForm)="
+          responseMsg = formatJobReference($event);
+          sendResponse();
+          modal.close()
+        "
+        [listOptions]="lastMessage"
+        [listCities]="listCities"
+      ></app-form-job-reference>
+    </div>
+  </div>
+</app-sc-modal>

@@ -1,0 +1,18 @@
+@import '../../../assets/bootstrap/variables';
+
+.register-container {
+  width: 100vw;
+  height: 100vh;
+  background: $primary-deg;
+  overflow: hidden;
+  @media (max-width: 768px) {
+  }
+}
+
+::ng-deep .sc-controls.is-error.is-error span {
+  color: $danger !important;
+}
+
+::ng-deep .dropdown-item { -webkit-text-fill-color:#000000;}
+::ng-deep .dropdown-item.active, .dropdown-item:active{background-color: #e2e2e2}
+

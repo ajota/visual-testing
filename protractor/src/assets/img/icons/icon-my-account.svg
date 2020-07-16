@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-mi_cuenta_gris">
+      <rect width="28" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="mi_cuenta_gris" data-name="mi cuenta gris" clip-path="url(#clip-mi_cuenta_gris)">
+    <g id="Grupo_9365" data-name="Grupo 9365" transform="translate(4 3)">
+      <circle id="Elipse_429" data-name="Elipse 429" cx="5.744" cy="5.744" r="5.744" transform="translate(4.407)" stroke-width="1.5" stroke="#bdbdbd" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path id="Trazado_5525" data-name="Trazado 5525" d="M272.936,274.57c-.313,0-5.619,3.391-5.619,8.928h19.978s.52-4.973-5.2-8.928" transform="translate(-267.317 -261.974)" fill="none" stroke="#bdbdbd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

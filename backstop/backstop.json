@@ -1,0 +1,96 @@
+{
+  "id": "testing_backstop",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "Desktop",
+      "width": 1366,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Testing Loading",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [".sc-loader__icons__image"],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Testing Homepage",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "delay": 6000
+    },
+    {
+      "label": "Testing Homepage hover btn 1",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "delay": 7000,
+      "hoverSelector": ".sc-button-content__button-left",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "Testing Homepage hover btn 2",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "delay": 6000,
+      "hoverSelector": ".sc-button-content__button-right",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "Testing Homepage click btn 1",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "delay": 6000,
+      "clickSelector": ".sc-button-content__button-left",
+      "postInteractionWait": 3000
+    },
+    {
+      "label": "Testing Homepage click btn 2",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://personas.credinet.co",
+      "delay": 6000,
+      "clickSelector": ".sc-button-content__button-right"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": true
+}

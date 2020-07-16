@@ -1,0 +1,58 @@
+<div
+  class="d-flex align-items-center mt-1"
+  [ngClass]="{
+    'flex-row ml-auto': ownerMsg == 'bot' || ownerMsg == 'error',
+    'flex-row-reverse mr-auto': ownerMsg == 'user'
+  }"
+  [hidden]="msg == emptyMessage || isCommand"
+>
+  <div
+    *ngIf="ownerMsg == 'bot' || ownerMsg == 'error'"
+    class="sc-chat__message--bot-icon"
+  ></div>
+  <div
+    class="d-flex flex-column sc-chat__message"
+    [ngClass]="{
+      'sc-chat__message--bot-msg': ownerMsg == 'bot',
+      'sc-chat__message--user-msg': ownerMsg == 'user',
+      'sc-chat__message--error-msg': ownerMsg == 'error',
+      'sc-chat__image-msg': isURL(msg)
+    }"
+  >
+  <!-- TODO: --VELANDIA-- Cambiar estilos en linea y trasladarlos al archivo de estilos del componente.  -->
+    <div
+      class="text-right"
+      style="margin-top: -0.5rem;"
+      *ngIf="isEditable"
+      [ngClass]="
+        [(ownerMsg == 'user') ? '' : 'sc-hidden', isURL(msg) ? 'sc-chat--edit-file' : '']
+      "
+      (click)="editResponse.emit(data)"
+    >
+      <span class="sc-chat--edit-text">{{'lbl_edit_question' | mapConfigLang}}</span>&nbsp;<button class="btn sc-btn__btn-edit"></button>
+    </div>
+    <span
+      [ngClass]="
+        ownerMsg == 'bot'
+          ? 'sc-chat__message--bot-name'
+          : 'sc-chat__message--user-name'
+      "
+      [hidden]="ownerMsg == 'user'">{{ data.name }}
+    </span>
+    <span *ngIf="!isURL(msg)" [innerHTML]="msg"></span>
+    <img
+      [hidden]="!isURL(msg)"
+      [src]="isURL(msg) ? msg + '?' + currentTime : ''"
+      class="sc-chat__preview-file"
+      alt=""
+    />
+  </div>
+</div>
+<div *ngIf="ownerMsg == 'bot' && last" class="sc-chat__actions">
+  <button
+  [hidden]="!(styleActionResponse !== btnStyles.shortList)"
+    class="btn sc-btn"
+    [ngClass]="styleActionResponse"
+    (click)="actionResponse.emit(actionType)"
+  ></button>
+</div>

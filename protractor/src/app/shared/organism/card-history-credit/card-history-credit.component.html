@@ -1,0 +1,15 @@
+<a href="" class="card sc-card-list"  [ngClass]=" {'sc-card-list--nullfied': data.status !== 2}"
+  [routerLink]="(data.status !== 2)? ['/dashboard'] : ['/credits', {outlets: { 'main-content':[nameRoutes.creditsHistory, data.creditId]}}]"
+  [class.sc-card-list--disabled]="data.status !== 2"
+ >
+  <div class="card-body d-xs-flex justify-content-between">
+    <div class="d-xs-flex flex-xs-column sc-card-list--content">
+      <span class="sc-card-list--title qa-label-store">{{data.storeName}}</span>
+      <span class="sc-card-list--info">{{ 'lbl_credit_value' | mapConfigLang }} <span class="sc-card-list--large-text qa-label-credit-value">{{data.creditValue | currency: 'COP' : '$': '3.0'}}</span> </span>
+    </div>
+    <div class="sc-card-list--small-text align-bottom" [ngClass]="data.status === 2 ? 'sc-card-list--small-text' : 'sc-card-list--small-text--nullified'" >
+      <img src="../../../../assets/img/icons/btn-arrow-gray.svg" alt="" *ngIf="data.status === 2">
+      <span class="qa-label-credit-state qa-label-state">{{ (data.status === 2 ? 'lbl_credit_paid': 'lbl_credit_cancelled') | mapConfigLang}} </span>
+    </div>
+  </div>
+</a>

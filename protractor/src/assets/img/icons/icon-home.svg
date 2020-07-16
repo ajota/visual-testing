@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-icono_inicio_gris">
+      <rect width="28" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="icono_inicio_gris" data-name="icono inicio gris" clip-path="url(#clip-icono_inicio_gris)">
+    <path id="Trazado_5662" data-name="Trazado 5662" d="M183.68,397.8l12.542-10.741a.62.62,0,0,1,.813.017l3.339,3.119v-1.8a.568.568,0,0,1,.587-.548h3.524a.569.569,0,0,1,.587.548v5.326a.532.532,0,0,0,.2.411l4.4,3.621a.545.545,0,0,1-.389.96H207.1a.568.568,0,0,0-.587.548V407.9a.57.57,0,0,1-.588.55H200a.569.569,0,0,1-.587-.55v-5.287a.57.57,0,0,0-.588-.548h-4.217a.569.569,0,0,0-.587.548V407.9a.569.569,0,0,1-.587.55H187.5a.57.57,0,0,1-.587-.545c-.016-2.032-.065-9.068,0-9.132.049-.045-1.557-.035-2.836-.021A.545.545,0,0,1,183.68,397.8Z" transform="translate(-182.676 -384.165)" fill="none" stroke="#bdbdbd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23">
+  <defs>
+    <clipPath id="clip-icono_fecha_de_pago">
+      <rect width="24" height="23"/>
+    </clipPath>
+  </defs>
+  <g id="icono_fecha_de_pago" data-name="icono fecha de pago" clip-path="url(#clip-icono_fecha_de_pago)">
+    <g id="Grupo_9204" data-name="Grupo 9204" transform="translate(-338.871 -305.034)">
+      <rect id="Rectángulo_3215" data-name="Rectángulo 3215" width="21.553" height="18.937" rx="1.61" transform="translate(339.871 308.096)" fill="none" stroke="#007aa4" stroke-miterlimit="10" stroke-width="1.2"/>
+      <line id="Línea_156" data-name="Línea 156" y2="4.021" transform="translate(346.342 305.891)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Línea_157" data-name="Línea 157" y2="4.021" transform="translate(355.133 305.891)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Línea_158" data-name="Línea 158" x2="21.553" transform="translate(339.871 313.46)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Trazado_5525" data-name="Trazado 5525" d="M350.737,325.1a.438.438,0,0,1-.441-.442v-.431c-.169-.01-.349-.027-.54-.051a3.715,3.715,0,0,1-.694-.158,2.063,2.063,0,0,1-.558-.283.609.609,0,0,1-.265-.5.6.6,0,0,1,.157-.406.534.534,0,0,1,.414-.188.816.816,0,0,1,.31.069l.33.134a3.559,3.559,0,0,0,.429.135,2.37,2.37,0,0,0,.418.064v-2.42q-.342-.117-.663-.252a2.873,2.873,0,0,1-.688-.4,1.87,1.87,0,0,1-.5-.624,2.044,2.044,0,0,1-.191-.934,2.07,2.07,0,0,1,.591-1.554,2.456,2.456,0,0,1,1.454-.639v-.448a.442.442,0,1,1,.884,0v.448c.137.014.282.031.436.051a2.9,2.9,0,0,1,.584.143,1.58,1.58,0,0,1,.467.256.582.582,0,0,1-.386,1.039.884.884,0,0,1-.291-.049l-.26-.094c-.09-.035-.193-.069-.306-.1a1.964,1.964,0,0,0-.243-.052v2.26q.331.116.656.25a2.738,2.738,0,0,1,.69.407,1.893,1.893,0,0,1,.7,1.556,2.382,2.382,0,0,1-.162.9,2.128,2.128,0,0,1-.455.7,2.378,2.378,0,0,1-.688.485,2.9,2.9,0,0,1-.739.227v.466a.438.438,0,0,1-.443.442Zm.443-2.118a.932.932,0,0,0,.788-1.012.921.921,0,0,0-.184-.641,1.42,1.42,0,0,0-.4-.309c-.063-.032-.2-.089-.2-.09Zm-.884-5.555a1.865,1.865,0,0,0-.229.067.889.889,0,0,0-.3.173.826.826,0,0,0-.2.27.957.957,0,0,0-.074.4,1.049,1.049,0,0,0,.061.377,1,1,0,0,0,.148.267.786.786,0,0,0,.184.168,1.364,1.364,0,0,0,.2.113c.065.033.128.06.191.087l.013,0Z" transform="translate(-0.084 -0.195)" fill="#007aa4"/>
+    </g>
+  </g>
+</svg>

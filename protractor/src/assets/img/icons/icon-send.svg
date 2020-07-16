@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="45" viewBox="0 0 46 45">
+  <defs>
+    <clipPath id="clip-botón_enviar">
+      <rect width="46" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="botón_enviar" data-name="botón enviar" clip-path="url(#clip-botón_enviar)">
+    <g id="Grupo_9328" data-name="Grupo 9328" transform="translate(-166 -307)">
+      <circle id="Elipse_411" data-name="Elipse 411" cx="22.5" cy="22.5" r="22.5" transform="translate(166 307)" fill="#98bf11"/>
+      <path id="Trazado_2618" data-name="Trazado 2618" d="M892.659,665.744a1.33,1.33,0,0,0-1.437-.274l-22.348,9.312a1.33,1.33,0,0,0,.017,2.464l7.972,3.189-1.312,4.8a1.331,1.331,0,0,0,2.554.753l.014-.053.745-2.735,3.154,6.677a1.33,1.33,0,0,0,1.2.762h.054a1.331,1.331,0,0,0,1.189-.861l8.513-22.615A1.333,1.333,0,0,0,892.659,665.744Zm-9.577,20.163-2.853-6.036,4.172-3.953a1.33,1.33,0,1,0-1.829-1.931l-4.359,4.129-5.3-2.124,16.5-6.875Z" transform="translate(-692.054 -348.368)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

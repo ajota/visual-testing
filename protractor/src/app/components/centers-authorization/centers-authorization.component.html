@@ -1,0 +1,57 @@
+<div class="container-fluid sc-full-height bg-primary">
+  <div class="row justify-content-center">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-7 col-xs-12 px-0">
+      <div class="sc-brand sc-brand--secondary">
+        <picture>
+          <img src="../../../assets/img/sc-logo-sm.png" alt="" srcset="" width="100%">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-7 col-xs-12 px-0" *ngIf="hasParams">
+      <div class="card sc-card-container sc-card-container--advices">
+        <div class="card-body" *ngIf="accountToVerify else isEmailVerified">
+          <div class="sc-icon sc-icon--welcome"></div>
+          <h1 class="sc-card-container__title qa-title-welcome"
+              [innerHTML]="'lbl_tittle_welcome' | mapConfigBase">
+          </h1>
+          <span class="sc-card-container__subtitle sc-card-container__subtitle--secondary qa-subtitle-register"
+                [innerHTML]="'lbl_document_welcome' | mapConfigBase">
+          </span>
+          <div class="sc-auth">
+            <h5 class="sc-title qa-title-auth" [innerHTML]="'title_auth_centers_welcome' | mapConfigBase"></h5>
+            <div class="sc-panel sc-panel--bordered sc-panel--scroll">
+              <p class="sc-copy sc-copy--info qa-text-auth" [innerHTML]=" legalTextCentersAuthorization$ | async">
+              </p>
+            </div>
+            <div class="form-group">
+              <div class="sc-check">
+                <input type="checkbox" [(ngModel)]="authorized" name="authorization" id="authorization" class="hide qa-check-auth">
+                <label  for="authorization" class="qa-label-auth" [innerHTML]="'lbl_check_auth_centers_welcome' | mapConfigBase"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ng-template #isEmailVerified>
+            <div class="card-body">
+              <div class="sc-icon sc-icon--welcome"></div>
+
+              <h1 class="sc-card-container__title qa-title-welcome"
+                  [innerHTML]="'lbl_tittle_welcome_error' | mapConfigBase">
+              </h1>
+
+              <span class="sc-card-container__subtitle sc-card-container__subtitle--secondary qa-subtitle-register"
+                    [innerHTML]="'lbl_document_welcome_error' | mapConfigBase">
+              </span>
+            </div>
+        </ng-template>
+        <div class="card-footer sc-card-container__footer">
+          <button class="btn btn-secondary sc-btn-secondary qa-link-welcome" (click)="sendAccountConfirmation()" [disabled]="!authorized"
+            [innerHTML]="'btn_continue' | mapConfigBase">
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

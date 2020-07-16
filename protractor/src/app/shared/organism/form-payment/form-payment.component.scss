@@ -1,0 +1,45 @@
+@import '../../../../assets/bootstrap/variables';
+
+
+.sc-payment {
+
+  &__user-info {
+    padding: 2% 6%;
+    width: 100%;
+    border: $sc-card-border-width solid $card-border-color;
+    border-radius: $sc-border-radius;
+  }
+
+  &__credit-info{
+    input:checked + label, input:checked ~ span {
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+
+  &--underline{
+    border-bottom: $sc-card-border-width solid $card-border-color;
+  }
+
+  &--border {
+    border: $sc-card-border-width solid $card-border-color;
+    border-radius: $sc-border-radius;
+    text-align: right;
+  }
+  &--error {
+    border: $sc-card-border-width solid $danger;
+  }
+}
+.w-30{
+  width: 30%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}

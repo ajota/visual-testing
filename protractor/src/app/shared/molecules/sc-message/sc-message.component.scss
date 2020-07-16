@@ -1,0 +1,136 @@
+@import '../../../../assets/bootstrap/variables';
+
+$sc-icon-size: 4rem;
+$sc-msg-background: #ebf0f6;
+$sc-color-name: #234699;
+
+.sc-chat{
+  &__message {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    // width: fit-content;
+    padding: 1.4em 1.5em 0.8em 1.5em;
+
+    &--bot-msg {
+      background-color: $sc-msg-background;
+      border-radius: 30px 30px 30px 10px;
+    }
+
+    &--bot-name {
+      font-weight: bold;
+      color: $primary;
+    }
+
+    &--bot-icon {
+      max-width: $sc-icon-size;
+      width: 36%;
+      height: $sc-icon-size;
+      background: url('../../../../assets/img/icons/icon-avatar-chat.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 2.5rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    &--user-msg{
+    border-radius: 30px 30px 10px 30px;
+    background-color: $primary;
+    color: white;
+    // @media (min-width: 768px) {
+    //   margin-bottom: 1rem;
+    // }
+    // @media (max-width: 480px) {
+    //   margin-bottom: 0.5rem;
+    // }
+    }
+    &--user-name {
+      color: white;
+      font-weight: bold;
+    }
+
+    &--error-msg {
+      border-radius: 30px 30px 30px 10px;
+      background-color: #e09a99;
+      color: black;
+      margin-bottom: 1rem;
+    }
+  }
+  &__image-msg{
+    position: relative;
+    padding: 0;
+  }
+
+  &__preview-file{
+    padding: 0;
+    max-width: 360px;
+    width: 100%;
+    height: 15rem;
+    background-size: contain;
+    border-radius: 15px;
+  }
+
+  &__actions {
+    margin-top: 2%;
+    margin-left: 13%;
+    @media screen and (max-width: map-get($grid-breakpoints, 'lg' )) {
+      margin-left: 10%;
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, 'md' )) {
+      margin-left: 12%;
+    }
+  }
+  &--edit-text{
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &--edit-file{
+    position: absolute;
+    margin-bottom: 0;
+    margin-right: 0.7rem;
+    margin-top: 0.5rem !important;
+    padding: 0.1rem 0.350rem;
+    right: 0;
+    background-color: $primary;
+    border-radius: 0.5rem;
+  }
+}
+
+.sc-btn {
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 2.2rem;
+
+  &__btn-location {
+    background-image: url('../../../../assets/img/icons/icon-locate.svg');
+
+  }
+  &__btn-camera {
+    background-image: url('../../../../assets/img/icons/icon-camera.svg');
+  }
+  &__btn-calendar {
+    background-image: url('../../../../assets/img/icons/icon-calendar.svg');
+  }
+  &__btn-form {
+    background-image: url('../../../../assets/img/icons/icon-reference.svg');
+  }
+  &__btn-skip {
+    margin-left: 1.5rem;
+  }
+  &__btn-edit{
+    background-image: url('../../../../assets/img/icons/icon-edit.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.45rem;
+  }
+  // @media (max-width: 1024px) {
+  //   margin-left: 1rem;
+  // }
+}
+
+.sc-hidden{
+  display: none;
+  visibility: hidden;
+}

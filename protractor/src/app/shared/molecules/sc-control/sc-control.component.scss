@@ -1,0 +1,112 @@
+.sc-controls{
+  margin-top: 21px;
+}
+
+/*====================================
+-------------FIELD MOLECULE-----------
+=====================================*/
+.sc-field{
+  position: relative;
+}
+
+.sc-field__licon, .sc-field__ricon{
+  @include sc-border-inputs();
+}
+
+.sc-field__input{
+  @include sc-border-inputs();
+  margin-top: 0.34em;
+  &--centered &{
+    text-align: center;
+  }
+
+  //focus state
+  @at-root .is-focus & ~ label,
+  &:focus ~ label{
+    transition: transform 0.2s ease-out;
+    transform: translateY(-15px) scale(0.8);
+    transform-origin: 0 0;
+  }
+
+  //error state
+  @at-root .sc-controls.is-error.is-error *{
+    color: $danger;
+    border-bottom-color: $danger;
+
+    .password-login{
+      color: $white;
+      border-bottom-color: $danger;
+    }
+  }
+}
+
+.sc-field__label{
+  position: absolute;
+  top: 5px;
+  margin: 0;
+  left:0;
+  @media screen and ( max-width: map-get($grid-breakpoints, 'sm') ) {
+    letter-spacing: -1.5px;
+  }
+
+  .sc-field__licon ~ & {
+    margin-left: $sc-icon-size;
+  }
+
+}
+
+.sc-field__validation{
+  display: block;
+  height: 0;
+  margin: 0;
+}
+
+.sc-field--home {
+
+  *, .sc-field__input {
+    color: $sc-text-blue-lighter;
+    border-bottom-color: $sc-text-blue-lighter;
+  }
+
+  //focus state
+  @at-root .is-focus & ~ label,
+  &:focus ~ label{
+    color: $sc-text-blue-lighter;
+    border-bottom-color: $sc-text-blue-lighter
+  }
+
+  //error state
+  @at-root .sc-controls.is-error.is-error & *{
+    color: $white;
+    border-bottom-color: $danger;
+  }
+
+}
+
+.password-login:-webkit-autofill,
+.password-login:-webkit-autofill:hover, 
+.password-login:-webkit-autofill:focus,
+.password-login:-webkit-autofill:active,
+#username:-webkit-autofill,
+#username:-webkit-autofill:hover, 
+#username:-webkit-autofill:focus, 
+#username:-webkit-autofill:active{
+  -webkit-text-fill-color:#ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #007aa4 inset;
+  transition: none;
+}
+
+.default-form:-webkit-autofill,
+.default-form:-webkit-autofill:hover, 
+.default-form:-webkit-autofill:focus, 
+.default-form:-webkit-autofill:active{
+  -webkit-text-fill-color:#535353;;
+  -webkit-box-shadow: 0 0 0px 1000px $white inset;
+  transition: none;
+}
+
+.register-user {
+  .sc-icon--password-show, .sc-icon--password-hide {
+    filter: brightness(0.3);
+  } 
+}

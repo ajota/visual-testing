@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+  <defs>
+    <clipPath id="clip-catalogo_luego_pago_web">
+      <rect width="27" height="34"/>
+    </clipPath>
+  </defs>
+  <g id="catalogo_luego_pago_web" data-name="catalogo luego pago web" clip-path="url(#clip-catalogo_luego_pago_web)">
+    <g id="Grupo_9455" data-name="Grupo 9455" transform="translate(-867.615 -589.627)">
+      <path id="Trazado_5705" data-name="Trazado 5705" d="M889.381,627.463H872.848c-2.338,0-4.233-1.589-4.233-3.549l1.831-21.629h21.338l1.831,21.629C893.615,625.874,891.72,627.463,889.381,627.463Z" transform="translate(0 -4.503)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_5704" data-name="Trazado 5704" d="M879.844,602.622v-6.609c0-3.195,2.619-5.287,5.82-5.287h.054c3.2,0,5.82,2.092,5.82,5.287v6.609" transform="translate(-4.374)" fill="none" stroke="#98bf11" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

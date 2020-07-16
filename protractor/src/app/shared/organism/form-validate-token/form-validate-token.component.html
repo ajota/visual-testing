@@ -1,0 +1,33 @@
+<form autocomplete="off"
+      [formGroup]="formTokenValidation"
+      class="sc-card-content"
+      (submit)="onSubmitForm();"
+>
+  <div class="sc-token__control">
+    <sc-control
+      [form]="formTokenValidation"
+      name="token_number"
+      theme="sc-field__input--centered"
+      label="txt_hint_token_number"
+      type="text"
+      [msgValidation]="{required: 'msj_empty_fields'}"
+    ></sc-control>
+    <div class="sc-token__control__right">
+      <button class="btn sc-card-container--normal-link sc-card-container__resend-link qa-resend-link" (click)="showNotificationResendToken();" type="button" [innerHTML]="'lbl_resend_token' | mapConfigLang"></button>
+    </div>
+    </div>
+    <div class="sc-token__validation" *ngIf="(token_number.value.length > '6') onTo">
+      <span class="qa-token-validator">{{'msj_error_token_invalid' | mapConfigLang}}</span>
+    </div>
+    <div class="sc-token__btns form-group" >
+    <button class="btn btn-outline-primary sc-user-control--btn-back mr-xs-1 qa-btn-back-token-validation"
+     type="button" (click)="goBack()">
+      {{'btn_back' | mapConfigLang}}
+    </button>
+    <button
+      class="btn btn-primary sc-card-content--btn-form qa-btn-send-validation ml-xs-2"
+      type="submit"
+      [disabled]="!formTokenValidation.valid">{{'btn_verify' | mapConfigLang}}
+    </button>
+  </div>
+</form>

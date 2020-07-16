@@ -1,0 +1,18 @@
+<div
+  *ngIf="valueToSearch.length >= 3"
+  class="dropdown-menu"
+  [ngClass]="{ show: isSearching }"
+>
+  <ng-container *ngTemplateOutlet="itemDropdown"></ng-container>
+</div>
+<ng-template #itemDropdown>
+  <div *ngFor="let item of itemsFound; let i = index">
+    <a
+      class="dropdown-item"
+      (click)="isPicked = true; chosenItemChange.emit(item.name)"
+      *ngIf="i <= 5"
+    >
+      {{ item.name }}
+    </a>
+  </div>
+</ng-template>

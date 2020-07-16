@@ -1,0 +1,89 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- develop
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'Build Develop'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: Docker@2
+  displayName: Build and push an image Develop
+  inputs:
+    buildContext: .
+    command: buildAndPush
+    containerRegistry: Desarrollo
+    dockerfile: '**/Dockerfile'
+    repository: '$(Build.Repository.Name)'
+    tags:
+      $(Build.BuildId)
+
+- task: Npm@1
+  displayName: 'Build QA'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run buildqa'
+
+- task: Docker@2
+  displayName: Build and push an image QA
+  inputs:
+    buildContext: .
+    command: buildAndPush
+    containerRegistry: Desarrollo
+    dockerfile: '**/Dockerfile'
+    repository: '$(Build.Repository.Name)'
+    tags:
+      qa_$(Build.BuildId)
+
+- task: Npm@1
+  displayName: 'Build Staging'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run buildstaging'
+
+- task: Docker@2
+  displayName:  Build and push an image Staging
+  inputs:
+    buildContext: .
+    command: buildAndPush
+    containerRegistry: Produccion
+    dockerfile: '**/Dockerfile'
+    repository: '$(Build.Repository.Name)'
+    tags:
+      staging_$(Build.BuildId)
+
+- task: Npm@1
+  displayName: 'Build Production'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run buildprod'
+
+- task: Docker@2
+  displayName:  Build and push an image Production
+  inputs:
+    buildContext: .
+    command: buildAndPush
+    containerRegistry: Produccion
+    dockerfile: '**/Dockerfile'
+    repository: '$(Build.Repository.Name)'
+    tags: |
+      production_$(Build.BuildId)
+      latest
