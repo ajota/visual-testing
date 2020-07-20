@@ -1,0 +1,547 @@
+{
+  "testId" : "1-login-page-on-a-desktop-device",
+  "name" : "Login page on a desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "https://personas.credinet.co/   1366x768",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "wait 3s",
+        "status" : "info",
+        "time" : 1595281291357,
+        "type" : "node"
+      }, {
+        "name" : "check gspecs/login.gspec --include \"desktop,all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: gspecs/login.gspec included tags: desktop,all",
+          "status" : "error",
+          "time" : 1595281297240,
+          "includedTags" : [ "desktop", "all" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Login Page",
+            "place" : {
+              "filePath" : "gspecs/login.gspec",
+              "lineNumber" : 15
+            },
+            "objects" : [ {
+              "name" : "banner",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside screen 0px top, 0px left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "banner",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "banner",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "banner", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "width 840px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "banner",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "banner",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "840px",
+                  "realDistance" : "840px"
+                } ],
+                "highlight" : [ "banner" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "near panel -1 to 0px left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "banner",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "panel",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "-1 to 0px",
+                  "realDistance" : "-1px"
+                } ],
+                "highlight" : [ "banner", "panel" ]
+              } ]
+            }, {
+              "name" : "panel",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "inside screen 0px top, 0px right",
+                "errors" : [ "\"panel\" is 8px right instead of 0px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "panel",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "panel",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "panel", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "width 486px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "panel",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "panel",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "486px",
+                  "realDistance" : "486px"
+                } ],
+                "highlight" : [ "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "near banner -1 to 0px right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "panel",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "banner",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "-1 to 0px",
+                  "realDistance" : "-1px"
+                } ],
+                "highlight" : [ "panel", "banner" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "inside panel 39px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "panel",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "39px",
+                  "realDistance" : "39px"
+                } ],
+                "highlight" : [ "logo", "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "centered horizontally inside panel",
+                "highlight" : [ "logo", "panel" ]
+              } ]
+            }, {
+              "name" : "txtWelcome",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "below logo",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "txtWelcome",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "38px"
+                } ],
+                "highlight" : [ "txtWelcome", "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 33
+                },
+                "name" : "centered horizontally inside panel",
+                "highlight" : [ "txtWelcome", "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "text is \"Ingresa y haz posible lo que sueñas\"",
+                "highlight" : [ "txtWelcome" ]
+              } ]
+            }, {
+              "name" : "regControls",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "centered horizontally inside panel",
+                "highlight" : [ "regControls", "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "below txtWelcome",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "regControls",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "txtWelcome",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "28px"
+                } ],
+                "highlight" : [ "regControls", "txtWelcome" ]
+              } ]
+            }, {
+              "name" : "txtAsk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside regControls 0px left, 7px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "txtAsk",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "regControls",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "0px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "txtAsk",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "regControls",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "7px",
+                  "realDistance" : "7px"
+                } ],
+                "highlight" : [ "txtAsk", "regControls" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "below txtWelcome",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "txtAsk",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "txtWelcome",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "35px"
+                } ],
+                "highlight" : [ "txtAsk", "txtWelcome" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "text is \"¿No tienes cuenta?\"",
+                "highlight" : [ "txtAsk" ]
+              } ]
+            }, {
+              "name" : "btnSingUp",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside regControls",
+                "errors" : [ "\"btnSingUp\" is not completely inside. The offset is 23px." ],
+                "highlight" : [ "btnSingUp", "regControls" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "below txtAsk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "btnSingUp",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "txtAsk",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "5px"
+                } ],
+                "highlight" : [ "btnSingUp", "txtAsk" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "text is \"Regístrate\"",
+                "highlight" : [ "btnSingUp" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "width 100 % of regControls/width",
+                "errors" : [ "\"btnSingUp\" width is 116% [161px] instead of 100% [138px]" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "btnSingUp",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "btnSingUp",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100% [138px]",
+                  "realDistance" : "116% [161px]"
+                } ],
+                "highlight" : [ "btnSingUp" ]
+              } ]
+            }, {
+              "name" : "lblEmail",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "inside panel 143px left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lblEmail",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "panel",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "143px",
+                  "realDistance" : "143px"
+                } ],
+                "highlight" : [ "lblEmail", "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "below regControls",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lblEmail",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "regControls",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "52px"
+                } ],
+                "highlight" : [ "lblEmail", "regControls" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "text is \"Correo electrónico\"",
+                "highlight" : [ "lblEmail" ]
+              } ]
+            }, {
+              "name" : "lblPass",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 57
+                },
+                "name" : "inside panel 143px left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lblPass",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "panel",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "143px",
+                  "realDistance" : "143px"
+                } ],
+                "highlight" : [ "lblPass", "panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "below regControls",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "lblPass",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "regControls",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "156px"
+                } ],
+                "highlight" : [ "lblPass", "regControls" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "gspecs/login.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "text is \"Contraseña\"",
+                "highlight" : [ "lblPass" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "regControls" : {
+              "area" : [ 1013, 218, 138, 84 ]
+            },
+            "btnSingUp" : {
+              "area" : [ 1013, 245, 161, 58 ]
+            },
+            "lblPass" : {
+              "area" : [ 982, 458, 103, 27 ]
+            },
+            "banner" : {
+              "area" : [ 0, 0, 840, 900 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1333, 900 ]
+            },
+            "logo" : {
+              "area" : [ 957, 39, 252, 59 ]
+            },
+            "txtWelcome" : {
+              "area" : [ 967, 136, 232, 54 ]
+            },
+            "lblEmail" : {
+              "area" : [ 982, 354, 165, 27 ]
+            },
+            "txtAsk" : {
+              "area" : [ 1013, 225, 116, 15 ]
+            },
+            "panel" : {
+              "area" : [ 839, 0, 486, 900 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1595281294360,
+        "type" : "node"
+      } ],
+      "time" : 1595281282023,
+      "type" : "node"
+    } ]
+  }
+}

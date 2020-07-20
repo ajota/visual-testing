@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "Login page on a desktop device",
+    "startedAt" : 1595281282020,
+    "endedAt" : 1595281297914,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 24,
+      "errors" : 3,
+      "warnings" : 0,
+      "total" : 27
+    },
+    "testId" : "1-login-page-on-a-desktop-device",
+    "duration" : 15894,
+    "failed" : true
+  } ]
+}

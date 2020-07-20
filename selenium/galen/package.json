@@ -1,0 +1,15 @@
+{
+  "name": "galen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui-test": "npx galen test suites/**  --htmlreport reports "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "galenframework-cli": "^2.4.4"
+  }
+}

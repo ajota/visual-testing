@@ -1,0 +1,59 @@
+#locators
+@objects
+    banner          .sc-media--home
+    panel           .sc-container--centered
+    logo            .sc-media--logo
+    regControls     .sc-register__controls
+    btnSingUp       .qa-btn-sign-up
+    btnLogin        .qa-btn-login
+    txtWelcome      .qa-text-welcome-subtitle
+    txtAsk          .qa-text-no-account
+    txtPass         .qa-text-password
+    lblEmail        .qa-label-username
+    lblPass         .qa-label-password
+
+= Login Page =
+    @on desktop
+        banner:
+            inside screen 0px top, 0px left
+            width 840px
+            near panel -1 to 0px left
+
+        panel:
+            inside screen 0px top, 0px right
+            width 486px
+            near banner -1 to 0px right
+        
+        logo:
+            inside panel 39px top
+            centered horizontally inside panel
+        
+        txtWelcome:
+            below logo
+            centered horizontally inside panel
+            text is "Ingresa y haz posible lo que sueñas"
+
+        regControls:
+            centered horizontally inside panel
+            below txtWelcome
+
+        txtAsk:
+            inside regControls 0px left, 7px top 
+            below txtWelcome
+            text is "¿No tienes cuenta?"
+
+        btnSingUp:
+            inside regControls
+            below txtAsk
+            text is "Regístrate"
+            width 100 % of regControls/width
+
+        lblEmail:
+            inside panel 143px left
+            below regControls
+            text is "Correo electrónico"
+
+        lblPass:
+            inside panel 143px left
+            below regControls
+            text is "Contraseña"

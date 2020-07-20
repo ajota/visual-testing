@@ -1,0 +1,4 @@
+Login page on a desktop device
+    https://personas.credinet.co/   1366x768
+        wait 3s
+        check gspecs/login.gspec --include "desktop,all"
