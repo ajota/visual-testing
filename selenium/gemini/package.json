@@ -1,0 +1,19 @@
+{
+  "name": "gemini-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-gyp": "^7.0.0"
+  },
+  "devDependencies": {
+    "gemini": "^7.5.2",
+    "selenium-standalone": "^6.18.0"
+  }
+}
