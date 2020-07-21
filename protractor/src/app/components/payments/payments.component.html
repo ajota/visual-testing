@@ -1,7 +1,0 @@
-<div *ngIf="enabledPayment">
-  <app-form-payment
-    [creditInfo]="creditInfo"
-    (eventBackButton)="eventBackButton.emit();"
-    (eventSubmitPayment)="payCredit($event)">
-  </app-form-payment>
-</div>
