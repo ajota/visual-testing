@@ -1,9 +1,0 @@
-<div class="sc-backdrop" [ngClass]="{ 'sc-backdrop--embebed': embebed }"  *ngIf="showModal" (click)="close()"></div>
-<div class="sc-modal modal-dialog {{addClass}}" [ngClass]="{hide: !showModal}">
-  <div class="sc-modal-container card">
-    <button class="btn sc-modal-container--btn-close" (click)="close()"></button>
-    <div class="card-body">
-      <ng-content> </ng-content>
-    </div>
-  </div>
-</div>
