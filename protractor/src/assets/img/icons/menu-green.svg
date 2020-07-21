@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="9" viewBox="0 0 26 9">
+  <defs>
+    <clipPath id="clip-menú_verde">
+      <rect width="26" height="9"/>
+    </clipPath>
+  </defs>
+  <g id="menú_verde" data-name="menú verde" clip-path="url(#clip-menú_verde)">
+    <g id="Grupo_8995" data-name="Grupo 8995" transform="translate(-298 -571)">
+      <g id="Elipse_428" data-name="Elipse 428" transform="translate(308 572)" fill="none" stroke="#71a000" stroke-width="1.5">
+        <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+        <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+      </g>
+      <g id="Elipse_440" data-name="Elipse 440" transform="translate(299 572)" fill="none" stroke="#71a000" stroke-width="1.5">
+        <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+        <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+      </g>
+      <g id="Elipse_439" data-name="Elipse 439" transform="translate(317 572)" fill="none" stroke="#71a000" stroke-width="1.5">
+        <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+        <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

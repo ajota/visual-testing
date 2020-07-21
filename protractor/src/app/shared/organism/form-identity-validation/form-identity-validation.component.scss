@@ -1,0 +1,27 @@
+
+@import '../../../../assets/bootstrap/variables';
+
+.sc-user-control--btn-back {
+  width: 168px;
+  height: 41;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.sc-card-content{
+  &--info{
+    text-align: center;
+  }
+
+  &__text{
+    font-size: $sc-font-size-xmd;
+    color: $primary;
+    &--value{
+      display: block;
+    }
+  }
+}
+
+.sc-card-container__subtitle--options{
+  text-align: center;
+}

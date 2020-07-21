@@ -1,0 +1,119 @@
+@import '../../../../assets/bootstrap/variables';
+
+.sc-datepicker-container{
+  margin: 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
+
+  &__input{
+    border: 1px #A2B4CC solid;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+  }
+  &--icon{
+    background-image: url('src/assets/img/icons/icon-date.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__title{
+    font-weight: bold;
+    color: $primary;
+  }
+  &--edit{
+    background-image: url('src/assets/img/icons/icon-pencil.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0.3rem;
+  }
+  .input-group > .form-control:not(:last-child){
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-right: 0.3rem;
+    border-left: 0;
+  }
+
+  .input-group-prepend{
+    background-color: #F8F8F8;
+    border: 1px #A2B4CC solid;
+    border-right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  @media screen and (max-width: map-get($grid-breakpoints, 'md' )){
+    ngb-datepicker.dropdown-menu{
+      //shame
+      position: fixed !important;
+      left: 0 !important;
+      right: 0;
+      bottom: 0;
+      top: 25% !important;
+      transform: translateX(0) !important;
+      width: max-content;
+      height: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, 'sm' )){
+    ngb-datepicker.dropdown-menu{
+      //shame
+      position: fixed !important;
+      left: 0 !important;
+      right: 0;
+      bottom: 0;
+      top: 25% !important;
+      transform: translateX(0) !important;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, 'xs' )){
+    ngb-datepicker.dropdown-menu{
+      //shame
+      position: fixed !important;
+      left: 0 !important;
+      right: 0;
+      bottom: 0;
+      top: 25% !important;
+      transform: translateX(0) !important;
+      width: max-content;
+      height: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+//ngb-datepicker custom styles
+.ngb-dp-week.ngb-dp-weekdays > * {
+  font-weight: bold;
+}
+.ngb-dp-header{
+  background-color: $primary !important;
+}
+
+.ngb-dp-navigation-chevron{
+  color: white;
+}
+
+.ngb-datepicker-navigation-select > select.custom-select{
+  background-color: $primary !important;
+  color: white !important;
+  font-weight: bold !important;
+  border: 0 !important;
+}
+
+.dropdown-menu{
+  @media screen and (max-width: map-get($grid-breakpoints, 'md' )){
+    font-size: 26px;
+  }
+  @media screen and (max-width: map-get($grid-breakpoints, 'sm' )){
+    font-size: 24px;
+  }
+} 
+
+//#007aa4

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="19" viewBox="0 0 18 19">
+  <defs>
+    <clipPath id="clip-icono_cerrar">
+      <rect width="18" height="19"/>
+    </clipPath>
+  </defs>
+  <g id="icono_cerrar" data-name="icono cerrar" clip-path="url(#clip-icono_cerrar)">
+    <g id="Grupo_9206" data-name="Grupo 9206">
+      <g id="Grupo_4759" data-name="Grupo 4759" transform="translate(0 1.169)">
+        <path id="Trazado_3333" data-name="Trazado 3333" d="M1303.385,195.7a8.966,8.966,0,0,1-3.312-17.3.9.9,0,1,1,.663,1.666,7.172,7.172,0,1,0,5.16-.053.9.9,0,0,1,.628-1.68,8.966,8.966,0,0,1-3.138,17.365Z" transform="translate(-1294.42 -178.276)" fill="#007aa4"/>
+      </g>
+      <g id="Grupo_4760" data-name="Grupo 4760" transform="translate(8.068 0)">
+        <path id="Trazado_3334" data-name="Trazado 3334" d="M1310.842,184.618a.9.9,0,0,1-.9-.9v-6.8a.9.9,0,1,1,1.793,0v6.8A.9.9,0,0,1,1310.842,184.618Z" transform="translate(-1309.945 -176.027)" fill="#007aa4"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+@import "../../../../assets/bootstrap/variables";
+
+.sc-options {
+  &__btn{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: $primary;
+    color: white;
+    min-width: 150px;
+  }
+  &__short-list {
+    background-color: $primary;
+    color: white;
+  }
+}

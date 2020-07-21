@@ -1,0 +1,79 @@
+/*TODO: Pasar animaciones a estilos generales*/
+@keyframes jump{
+  0%{ transform: translateY(50px) scale(0.2); }
+  50%{ transform: translateY(-25px) scale(0.7); }
+  100%{ transform: translateY(0) scale(1); }
+};
+
+@keyframes grow{
+  0%{ transform: translateY(100px) scale(0); }
+  100%{ transform: translateY(0) scale(1); }
+};
+
+@keyframes grow-text{
+  0%{ font-size: 0; }
+  100%{ transform: translateY(0) scale(1); }
+};
+
+
+/**/
+@import '../../../assets/bootstrap/variables';
+
+$animation-time: 1s;
+
+.sc-icon--welcome{
+  animation: jump $animation-time cubic-bezier(.15, .85, .75, 1.25) 0.1s;
+}
+
+.sc-card-container--advices{
+    animation: grow $animation-time cubic-bezier(.02, .85, .63, 1.17);
+}
+
+.sc-check {
+  color: $primary;
+  text-align: left;
+  line-height: 1.8;
+  font-size: $sc-font-size-md;
+
+  //TODO: pasar checkbox a estiñlos generales cuando este se use mas de una vez
+  label{
+    cursor: pointer;
+    &:before{
+      content: '';
+      text-align: center;
+      color: $black-custom;
+      border: $sc-check-border;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: ( $sc-font-size-xmd / 6 ) ;
+      width: $sc-font-size-xxmd;
+      height: $sc-font-size-xxmd;
+      margin-right: $sc-font-size-md;
+      // transition: font-size .3s cubic-bezier(0, 1.71, 0.85, 3.01),
+      //             line-height .3s ease-in-out;
+    }
+  }
+
+  input[type=checkbox]:checked + label:before{
+    font-size: $sc-font-size-md;
+    background-image: url('../../../assets/img/icons/icon-control-check.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    line-height: 1.3;
+    // transition: font-size 1s cubic-bezier(0.36, 2.57, 0.94, 3.4),
+    //             line-height 1s cubic-bezier(0.36, 2.57, 0.94, 3.4);
+  }
+}
+
+.sc-auth{
+  margin-top:6%;
+  .sc-check{
+    margin-top: 1%;
+    margin-left: 3%;
+  }
+
+  .sc-panel{
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+}

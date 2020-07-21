@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="14" viewBox="0 0 12 14">
+  <defs>
+    <clipPath id="clip-Editar_perfil">
+      <rect width="12" height="14"/>
+    </clipPath>
+  </defs>
+  <g id="Editar_perfil" data-name="Editar perfil" clip-path="url(#clip-Editar_perfil)">
+    <g id="Grupo_9360" data-name="Grupo 9360" transform="translate(-100 -281.487)">
+      <ellipse id="Elipse_449" data-name="Elipse 449" cx="2.931" cy="2.931" rx="2.931" ry="2.931" transform="translate(103.121 282.285)" fill="none" stroke="#535353" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_5593" data-name="Trazado 5593" d="M270.184,274.57a5.655,5.655,0,0,0-2.867,4.555h10.194s.265-2.538-2.655-4.555" transform="translate(-166.317 15.029)" fill="none" stroke="#535353" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

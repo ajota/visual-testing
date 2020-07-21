@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="sc-dashboard-row row">
+    <div class="col-sm-12 col-lg-8 col-xl-8 my-xs-2 px-xs-0 px-sm-0 px-md-0 pr-lg-3 pr-xl-3" [ngClass]="{'sc-credit': historyCredit ===  true}">
+      <div class="sc-panel sc-panel-right sc-panel--list" (click)="viewCredit()">
+        <div class="sc-dashboard__no-credits"
+        *ngIf="(!toggleHasCredits && !toggleHasHistoryCredits) && ( customerStatus === stateCustomerStorage.active || customerStatus === stateCustomerStorage.negated )">
+          <img src="../../../assets/img/icons/icon-credit-management.png" alt="" class="sc-credits--no-active-credits">
+          <p [innerHTML]="'msj_empty_management_credits' | mapConfigLang">{{'msj_empty_management_credits' | mapConfigLang}}</p>
+        </div>
+        <div class="sc-dashboard__no-credits" *ngIf="!toggleHasCredits && customerStatus === stateCustomerStorage.new" >
+          <img src="../../../assets/img/icons/statart-request.svg" alt="" class="sc-credits--request">
+          <p [innerHTML]="'lbl_start_request' | mapConfigLang"></p>
+        </div>
+        <div class="sc-dashboard__no-credits"
+            *ngIf="(!toggleHasCredits && toggleHasHistoryCredits) && (customerStatus === stateCustomerStorage.active || customerStatus === stateCustomerStorage.negated)" >
+          <img src="../../../assets/img/icons/statart-request.svg" alt="" class="sc-credits--request">
+          <p [innerHTML]="'msj_no_active_credits' | mapConfigLang">
+          </p>
+        </div>
+        <div [ngClass]="{'hide': !toggleHasCredits && (customerStatus == stateCustomerStorage.new || customerStatus == stateCustomerStorage.active  || customerStatus == stateCustomerStorage.negated )}" *ngIf="env.release >= 3">
+          <div class="mb-xs-2">
+            <span class="sc-panel__title">{{'lbl_tittle_active_credits' | mapConfigLang}}</span>
+          </div>
+          <ng-container *ngFor="let credit of (activeCredits$ | async)">
+            <app-card-active-credit [data]="credit" class="sc-credit"
+              [ngClass]="{'sc-credit__true': creditActive ===  true}" [enabledPayment]="enabledPayment"></app-card-active-credit>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-4 col-xl-4 px-0" [ngClass]="{'sc-credit': creditActive ===  true}">
+      <div class="sc-panel sc-panel--list " (click)="viewCreditHistory()">
+        <div class="sc-dashboard__no-credits sc-dashboard__no-credits--credit-history" [ngClass]="{'hide': toggleHasHistoryCredits}">
+          <img src="../../../assets/img/icons/credit-histoy-gray.png" class="sc-credits__icons-history">
+          <p class="sc-dashboard__no-credits--text" [innerHTML]="'msj_no_credit_history' | mapConfigLang"></p>
+        </div>
+        <div [ngClass]="{'hide': !toggleHasHistoryCredits}" *ngIf="env.release >= 3" >
+          <div class="mb-xs-2">
+            <span class="sc-panel__title sc-panel__title--right">{{'lbl_tittle_credit_history' | mapConfigLang}}</span>
+          </div>
+          <ng-container *ngFor="let credit of (historyCredits$ | async)">
+            <app-card-history-credit [data]="credit" class="sc-credit"
+              [ngClass]="{'sc-credit__true': historyCredit ===  true}"></app-card-history-credit>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <clipPath id="clip-cuenta_facebook">
+      <rect width="37" height="37"/>
+    </clipPath>
+  </defs>
+  <g id="cuenta_facebook" data-name="cuenta facebook" clip-path="url(#clip-cuenta_facebook)">
+    <g id="Grupo_9421" data-name="Grupo 9421" transform="translate(-213 -491)">
+      <g id="Grupo_9426" data-name="Grupo 9426" transform="translate(113)">
+        <circle id="Elipse_457" data-name="Elipse 457" cx="17.5" cy="17.5" r="17.5" transform="translate(101 492)" fill="#3b5998"/>
+      </g>
+      <path id="pequeno-logotipo-de-facebook" d="M89.089,0H87.863A6.19,6.19,0,0,0,81.68,6.183V8.793h-2.1a.391.391,0,0,0-.391.391V12.31a.391.391,0,0,0,.391.391h2.1v9.575a.391.391,0,0,0,.391.391H85.2a.391.391,0,0,0,.391-.391V12.7H88.7a.391.391,0,0,0,.391-.391V9.183a.391.391,0,0,0-.391-.391h-3.11V6.183a2.278,2.278,0,0,1,2.275-2.275h1.227a.391.391,0,0,0,.391-.391V.391A.391.391,0,0,0,89.089,0Z" transform="translate(146.807 498)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

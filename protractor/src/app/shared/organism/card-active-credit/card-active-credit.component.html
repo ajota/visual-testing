@@ -1,0 +1,32 @@
+<div class="card sc-card-list" (click)="goToCreditDetail(data.creditId)" >
+  <div class="sc-side sc-side--3-4">
+    <div class="sc-card-list__title qa-label-store">{{data.storeName}}</div>
+    <span class="sc-card-list__subtitle qa-label-credit-value">{{ 'lbl_credit_value' | mapConfigLang }} </span>
+    <span class="sc-card-list__title sc-text--bold qa-label-credit-amount"> {{data.creditValue | currency: 'COP': '$' : '3.0'}}</span>
+    <div class="sc-card-list__info qa-label-date-payment">
+      {{ 'lbl_next_payment_date' | mapConfigLang }}
+      <ng-container *ngIf="data.hasArrearsCharge; else elseTemplate">
+        <span class="text-purple">
+          <img
+            src="../../../assets/img/icons/icon-warning.png"
+            alt=""
+            class="mx-1"
+          />{{'lbl_inmediate_payment' | mapConfigLang}}</span>
+      </ng-container>
+      <ng-template #elseTemplate>
+        <span> <strong>{{ data.dueDate | date: 'dd/MM/yyyy'}}</strong></span>
+      </ng-template>
+    </div>
+  </div>
+  <div class="sc-side sc-side--1-4">
+    <div class="sc-text--center" *ngIf="enabledPayment">
+      <button class="btn btn-primary sc-text--sm qa-btn-pay" *ngIf="alternatePayment">
+        {{ 'btn_pay' | mapConfigLang }}
+        <img src="../../../assets/img/icons/icon-pay.png" alt="" />
+      </button>
+    </div>
+    <!-- <div class="sc-btn-arrow">
+      <img src="../../../../assets/img/icons/btn-arrow.svg" alt="">
+    </div> -->
+  </div>
+</div>

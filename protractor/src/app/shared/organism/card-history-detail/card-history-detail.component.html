@@ -1,0 +1,30 @@
+<div>
+    <div class="sc-detail-content">
+      <div class="sc-detail-content__detail-credit m-1">
+        <div class="text-right sc-detail-content--large-text qa-label-status-credit">
+            {{'lbl_credit_paid' | mapConfigLang}}
+        </div>
+        <div class="sc-detail-content__info-credit d-xs-flex flex-xs-column">
+          <span class="sc-detail-content--small-text">{{'lbl_made_in' | mapConfigLang}}</span>
+          <span class="sc-detail-content--name-credit qa-label-store"
+            >{{credit?.storeName}}</span
+          >
+          <p class="sc-detail-content--small-text">
+            {{'lbl_credit_creation_date' | mapConfigLang}} <strong class=" qa-label-credit-date">{{credit?.creditDate | date : 'dd/MM/yyyy'}}</strong>
+          </p>
+          <span class="sc-detail-content--medium-text">{{'lbl_credit_value' | mapConfigLang}}</span>
+          <span class="sc-detail-content--large-text qa-label-credit-value">{{credit?.creditValue | currency: 'COP' : '$': '3.0'}}</span>
+        </div>
+        <div class="mt-xs-3" *ngIf="env.release >= 4">
+            <img
+              src="../../../assets/img/icons/icon-safe-file.png"
+              alt=""
+              class="mr-xs-2"
+            />
+            <a class="sc-detail-content--normal-link font-weight-bold" href="javascript:void(0)" (click)="showNoBalanceDue.emit()" >
+              {{'btn_see_peace_save' | mapConfigLang}}</a
+            >
+          </div>
+      </div>
+    </div>
+  </div>

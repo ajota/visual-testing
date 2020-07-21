@@ -1,0 +1,65 @@
+<div class="bg-primary container-fluid">
+  <div class="row h-100">
+    <div class="w-100 sc-full-height">
+      <div class="sc-media--home h-100"></div>
+      <div class="sc-container sc-container--centered">
+        <div class="sc-container__mid-align h-100 "></div>
+        <div class="sc-register">
+          <div class="sc-register__media">
+            <img class="sc-media--logo" src="../../../assets/img/sc-logo-sm.png" alt=""/>
+          </div>
+          <div class="sc-register__text qa-text-welcome-subtitle" [innerHTML]="'lbl_welcome_subtitle' | mapConfigBase"></div>
+          <div class="sc-register__controls text-left">
+            <div ><span class="sc-link sc-text-small qa-text-no-account" [innerHTML]="'lbl_no_account' | mapConfigBase"></span></div>
+            <button class="btn sc-btn-primary--lg qa-btn-sign-up" [innerHTML]="'btn_sign_up' | mapConfigBase" (click)="showRegisterNotify()"></button>
+          </div>
+          <div class="sc-register__fields">
+            <app-form-login #formLogin [user]="user"
+              (eventSubmitLogin)="sendFormToLogin($event)"
+              (eventExternalLogin)="sendtExternalLogin($event)"
+              [enabledPayment]="enabledPayment"
+              [autoCompleteEmail]='autoCompleteEmail'
+            ></app-form-login>
+          </div>
+          <div class="d-flex justify-content-between mt-4">
+            <a href="https://paymentonline.credinet.co/" class="quick-payment text-center p-2" (click)="redirectQuickPaymnet()" *ngIf="enabledPayment">
+              <span class="m-1">
+                <i class="sc-icon--quick-payment"></i>
+                {{'lbl_quick_payment' | mapConfigBase}}
+               </span>
+             </a>
+             <a [href]="urlAction" target="_blank" class="quick-payment text-center py-2 px-3" *ngIf="env.release >= 3">
+              <span class="m-1">
+                <i class="sc-icon--catalogue-blue"></i>
+                {{'lbl_menu_catalogue' | mapConfigBase}}
+               </span>
+             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-sc-modal #modal [addClass]="'w-auto'">
+  <div class="sc-social-register">
+    <span [innerHTML]="'lbl_register_options_title' | mapConfigBase"></span>
+    <div class="col-12">
+      <a href="javascript:void(0)" class="btn btn-outline-primary sc-social-register__btn sc-social-register__btn--google qa-social-btn-google" (click)="sendtExternalLogin('google'); modal.close()">
+        <span class="sc-text--md">{{'lbl_register_by_google' | mapConfigBase}}</span>
+      </a>
+      <a href="javascript:void(0)" class="btn btn-outline-primary sc-social-register__btn sc-social-register__btn--facebook qa-social-btn-facebook" (click)="sendtExternalLogin('facebook'); modal.close()">
+        <span class="sc-text--md">{{'lbl_register_by_facebook' | mapConfigBase}}</span>
+      </a>
+      <div class="sc-additional-login">
+        <div class="sc-login-text">o</div>
+      </div>
+      <a href="javascript:void(0)" class="btn btn-outline-primary sc-social-register__btn sc-social-register__btn--siste qa-social-btn-siste"  [routerLink]="['/' + nameRoutes.registerUser]">
+        <span class="sc-text--md">{{'lbl_register_by_sistecredito' | mapConfigBase}}</span>
+      </a>
+    </div>
+    <span class="sc-social-register__footer">{{'lbl_register_option_footer' | mapConfigBase}}</span>
+    <a class="sc-social-register__link" href=" https://www.sistecredito.com/informacion-para-el-consumidor/" 
+    target="_blank" rel="noopener noreferrer">{{'lbl_register_option_link' | mapConfigBase}}</a>
+  </div>
+</app-sc-modal>

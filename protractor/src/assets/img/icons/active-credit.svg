@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="42" viewBox="0 0 41 42">
+  <defs>
+    <clipPath id="clip-créditos_activos">
+      <rect width="41" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="créditos_activos" data-name="créditos activos" clip-path="url(#clip-créditos_activos)">
+    <g id="Grupo_9212" data-name="Grupo 9212" transform="translate(1 1.199)">
+      <path id="Trazado_5524" data-name="Trazado 5524" d="M472.33,529.054a11.384,11.384,0,1,1,6.119-6.134" transform="translate(-456.55 -507.165)" fill="none" stroke="#a7bf30" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_5525" data-name="Trazado 5525" d="M482.315,532.047l1.3-.749a2.386,2.386,0,0,1,2.177-.245l1.518-.876a1.84,1.84,0,0,1,2.394.641l1.518-.876a1.84,1.84,0,0,1,2.394.641l4.381,7.588c.887,1.536.088,3.649.673,4.671l.438.759" transform="translate(-459.738 -509.958)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_145" data-name="Línea 145" x2="2.191" y2="3.794" transform="translate(26.051 21.095)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_146" data-name="Línea 146" x2="1.753" y2="3.035" transform="translate(29.962 20.86)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_5526" data-name="Trazado 5526" d="M484.11,536.159l-5.258-9.106a1.752,1.752,0,0,0-2.394-.641,1.727,1.727,0,0,0-.664,2.351l.008.015,6.694,11.593a.263.263,0,0,1-.311.377,22,22,0,0,0-4.146-1.087A2.308,2.308,0,0,0,476,540.667a1.691,1.691,0,0,0,.491,2.34,1.718,1.718,0,0,0,.43.2c3.216,1.042,5.594,3.558,8.651,4.243,1.259.338,1.389.653,1.635,1.079l.456.789" transform="translate(-458.904 -509.517)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_5527" data-name="Trazado 5527" d="M466.541,520.4v.876a1.841,1.841,0,0,0,1.772,1.753h1.733a1.818,1.818,0,0,0,1.753-1.753v-.263a1.59,1.59,0,0,0-1.189-1.5l-2.865-.859a1.606,1.606,0,0,1-1.2-1.5V516.9a1.818,1.818,0,0,1,1.753-1.753h1.753A1.816,1.816,0,0,1,471.8,516.9v.876" transform="translate(-457.786 -508.153)" fill="none" stroke="#a7bf30" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_147" data-name="Línea 147" y1="2.629" transform="translate(11.384 4.363)" fill="none" stroke="#a7bf30" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_148" data-name="Línea 148" y2="2.629" transform="translate(11.384 14.878)" fill="none" stroke="#a7bf30" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

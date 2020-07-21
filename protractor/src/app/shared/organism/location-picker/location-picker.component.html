@@ -1,0 +1,23 @@
+<div class="sc-location-picker">
+  <div class="text-center mt-2">
+      <span class="sc-text--xxmd sc-location-picker__title" [innerHTML]="'lbl_location_title' | mapConfigLang"></span>
+  </div>
+  <div class="input-group py-3 sc-control">
+    <div class="input-group-prepend">
+      <span class="input-group-text sc-control--icon-search"></span>
+    </div>
+    <input type="text" class="form-control sc-control__search" [(ngModel)]="city" [ngbTypeahead]="SearchCity()" (selectItem)="getNeighborhood($event); selectCity($event)" [placeholder]="'lbl_search_city' | mapConfigLang"/>
+  </div>
+  <div class="input-group py-3 sc-control">
+    <div class="input-group-prepend">
+      <span class="input-group-text sc-control--icon-search"></span>
+    </div>
+    <input type="text" class="form-control sc-control__search" [(ngModel)]="neigborhood" (ngModelChange)="validateUserInput()" [ngbTypeahead]="SearchNeighborhood()" [placeholder]="'lbl_search_neighborhood' | mapConfigLang"/>
+  </div>
+  <div class="text-center pt-3">
+  <button class="btn btn-primary sc-control--send" (click)="onSubmit()"
+  [disabled]="!isValidResponse">
+    {{'lbl_sendButton' | mapConfigLang}}
+  </button>
+</div>
+</div>

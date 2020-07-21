@@ -1,0 +1,77 @@
+<div class="sc-job-reference">
+    <div class="sc-job-reference__title text-center">
+      <span class="sc-text--xxmd  ">{{'lbl_tittle_head_action_bar_job_reference' | mapConfigLang}}</span>
+    </div>
+    <div class="sc-job-reference__form">
+      <form
+      [formGroup]="formJobReference"
+      (ngSubmit)="onSubmitForm()"
+      >
+
+    <div class="form-group my-3" >
+      <label class="text-left sc-text--sm" for="">{{ 'txt_answer_key_ocupation_reference'| mapConfigLang }}</label>
+      <select
+        class="form-control sc-job-reference__select"
+        formControlName="ocupation"
+        (click)=" showInputForm()"
+      >
+        <option *ngFor="let item of ocupationOptions" [value]="item">{{item}}</option>
+      </select>
+    </div>
+    <div class="form-group my-3 mb-3">
+      <label class="text-left sc-text--sm" for="">{{ 'txt_answer_key_salary_reference'| mapConfigLang }}</label>
+      <select
+        class="form-control sc-job-reference__select"
+        formControlName="salary"
+      >
+        <option *ngFor="let item of salaryOptions" [value]="item">{{item}}</option>
+      </select>
+    </div>
+        <div class="my-3" [hidden]="!availableInput">
+          <sc-control
+            [form]="formJobReference"
+            name="business"
+            type="text"
+            theme="default-form"
+            label="txt_answer_key_name_job_reference"
+            licon="sc-icon--business"
+            [msgValidation]="{
+              pattern: 'msj_error_answer_empty',
+            required: 'msj_error_answer_empty' }"
+          >
+          </sc-control>
+        </div>
+        <div class="my-3" [hidden]="!availableInput">
+          <sc-control
+            [form]="formJobReference"
+            name="phone"
+            type="text"
+            theme="default-form"
+            label="lbl_answer_key_phone_reference"
+            licon="sc-icon--phone"
+            [msgValidation]="{ pattern: 'msj_error_server_wrong_user_response',
+                               required: 'msj_error_answer_empty'} "
+            (valueChange) = "validatePhone($event)"
+          >
+          </sc-control>
+        </div>
+        <div class="form-group my-3" [hidden]="!availableInput">
+          <label for="" class="text-left sc-text--sm">{{ 'lbl_message_position'| mapConfigLang }}</label>
+          <select
+            class="form-control sc-job-reference__select"
+            formControlName="role"
+          >
+            <option *ngFor="let item of roleOptions" [value]="item">{{item}}</option>
+          </select>
+        </div>
+        <div class="text-center pt-3">
+            <button
+            class="btn btn-primary sc-job-reference--send"
+            type="submit"
+            [disabled]="!(formJobReference.valid && validateReference)"
+          [innerHTML]="'btn_login_send' | mapConfigBase">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

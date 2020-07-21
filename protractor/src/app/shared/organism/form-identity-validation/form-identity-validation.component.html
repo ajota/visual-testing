@@ -1,0 +1,23 @@
+<div *ngIf="controls.length >= 2" class="sc-card-container__subtitle--options" >
+  <span class="sc-card-container__subtitle qa-subtitle-identity-validation">{{'lbl_token_instructions' | mapConfigLang}}</span>
+</div>
+<form (submit)="onSubmitForm();"
+  [formGroup]="formIdentityValidation"
+  class="sc-card-content"
+>
+  <div class="sc-radiobutton custom-control custom-radio mb-4" [ngClass]="{'sc-text--center': controls.length <= 1 }" *ngFor="let control of showControls">
+    <input class="custom-control-input qa-option-{{control.media}}" type="radio" id="scRadio{{control.media}}"
+    formControlName="validation_type" [value]="control" >
+    <label class="qa-label-text-{{control.media}} sc-card-content__text" [ngClass]="{'custom-control-label': controls.length > 1 }" for="scRadio{{control.media}}"
+    >{{ control.label | mapConfigLang}} <span class="qa-label-{{control.media}}" [ngClass]="{'sc-card-content__text--value': controls.length > 1 }">{{ maskValue( control.value ) }} </span> </label>
+  </div>
+  <div class="form-group text-center pt-4 d-xs-flex justify-content-around mt-4" >
+    <a class="btn btn-outline-primary sc-user-control--btn-back mr-xs-1 qa-btn-back-validation" [routerLink]="['../../' + nameRoutes.registerRequest ]">
+      {{'btn_back' | mapConfigLang}}
+    </a>
+    <button
+    class="btn btn-primary sc-card-content--btn-form qa-btn-send-validation ml-xs-2"
+    type="submit"
+    [disabled]="!formIdentityValidation.valid">{{'lbl_send' | mapConfigLang}}</button>
+  </div>
+</form>

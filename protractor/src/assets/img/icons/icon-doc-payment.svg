@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="23" viewBox="0 0 16 23">
+  <defs>
+    <clipPath id="clip-icono_pagaré">
+      <rect width="16" height="23"/>
+    </clipPath>
+  </defs>
+  <g id="icono_pagaré" data-name="icono pagaré" clip-path="url(#clip-icono_pagaré)">
+    <g id="Grupo_9207" data-name="Grupo 9207" transform="translate(-535.056 -397.291)">
+      <path id="Trazado_5465" data-name="Trazado 5465" d="M539.981,398.291h9.2a1.254,1.254,0,0,1,1.255,1.255v18.821a1.254,1.254,0,0,1-1.255,1.255H537.311a1.254,1.254,0,0,1-1.255-1.255V402.216" transform="translate(0 0)" fill="none" stroke="#007aa4" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Trazado_5466" data-name="Trazado 5466" d="M536.056,402.248l4.054-3.957v2.9s-.29,1.062-1.158,1.062Z" transform="translate(0 0)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_146" data-name="Línea 146" x2="1.448" transform="translate(538.645 407.115)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_147" data-name="Línea 147" x2="1.448" transform="translate(538.645 410.119)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_148" data-name="Línea 148" x2="1.448" transform="translate(538.645 413.376)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_149" data-name="Línea 149" x2="6.563" transform="translate(541.782 407.115)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_150" data-name="Línea 150" x2="6.563" transform="translate(541.782 410.119)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_151" data-name="Línea 151" x2="6.563" transform="translate(541.782 413.376)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+<div class="sc-payment p-4">
+  <div class="sc-payment__user-info">
+    <div class="d-flex flex-column sc-payment--underline">
+      <span class="sc-text--lg font-weight-bold"
+    >{{creditInfo?.client}}</span
+      >
+    <span>{{creditInfo?.typeDocument}} &nbsp; {{creditInfo?.idDocument}}</span>
+    </div>
+    <div class="d-flex flex-column mt-2">
+      <span class="sc-text--lg text-primary font-weight-bold"
+        >{{creditInfo?.storeName}}</span
+      >
+      <span class="text-primary sc-text--md"
+        >{{ "lbl_credit_creation_date" | mapConfigLang }}:
+    <strong>{{creditInfo?.creditDate | date : 'dd/MM/yyyy'}}</strong></span
+      >
+      <span class="text-primary sc-text--md mt-2">{{
+        "lbl_credit_value" | mapConfigLang
+      }}</span>
+      <span class="sc-text--lg font-weight-bold text-primary">{{creditInfo?.creditValue | currency: 'COP' : '$': '3.0'}}</span>
+    </div>
+  </div>
+  <div class="sc-payment__credit-info mt-3">
+    <form
+      [formGroup]="formPayment"
+      (ngSubmit)="onSubmitForm($event)"
+    >
+      <div class="mb-4">
+        <div class="text-center py-2">
+          <span class="sc-text--lg text-primary font-weight-bold"
+        >{{'lbl_payment_information' | mapConfigLang}}</span
+          >
+        </div>
+        <div class="d-flex justify-content-between py-2 sc-payment--underline">
+          <div class="custom-control custom-radio w-100">
+            <input
+              id="total"
+              type="radio"
+              name="creditValue"
+              class="custom-control-input qa-radio-total"
+              formControlName="creditValue"
+              [value]="creditInfo?.totalPayment !== 0 ? creditInfo?.totalPayment : maxPayValue"
+              (click)="(customValueDisabled = true)"
+              />
+            <label class="custom-control-label qa-label-total" for="total">{{'lbl_full_payment' | mapConfigLang}}</label>
+            <span class="float-right qa-span-total">{{(creditInfo?.totalPayment !== 0 ? creditInfo.totalPayment: maxPayValue) | currency: 'COP' : '$': '3.0'}}</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-2 sc-payment--underline" *ngIf="creditInfo.value !== creditInfo.valueMax">
+          <div class="custom-control custom-radio w-100" >
+            <input
+              id="minimum"
+              type="radio"
+              name="creditValue"
+              class="custom-control-input qa-radio-minimum"
+              formControlName="creditValue"
+              (click)="(customValueDisabled = true)"
+              [value]="creditInfo?.minimumPayment !== 0 ? minPayValue :creditInfo?.minimumPayment"
+            />
+            <label class="custom-control-label qa-label-minimum" for="minimum">{{'lbl_minimum_payment' | mapConfigLang}}</label>
+            <span class="float-right qa-span-minimum">{{ (creditInfo?.minimumPayment !== 0 ? creditInfo.minimumPayment : minPayValue) | currency: 'COP' : '$': '3.0'}}</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between pt-3">
+          <div class="custom-control custom-radio w-100">
+            <input
+              id="custom"
+              type="radio"
+              name="creditValue"
+              class="custom-control-input qa-radio-custom"
+              (change)="(customValueDisabled = false )"
+              [checked]="!customValueDisabled && creditValue.value > 0"
+              (click)="creditValue.setValue( customValueInput.value )"
+              />
+            <label class="custom-control-label qa-label-custom" for="custom">{{'lbl_other_value' | mapConfigLang}}</label>
+          </div>
+          <input
+          [ngClass]="{'sc-payment--error': !customValueDisabled && creditValue.invalid }"
+          class="form-control sc-payment--border w-30 qa-input-custom"
+          name="customValue"
+          type="number"
+          (keyup)="validateInput($event)"
+          [disabled]="customValueDisabled"
+          #customValueInput
+          />
+        </div>
+        <div class="text-danger text-right sc-text--sm pt-1 qa-label-error" *ngIf="!customValueDisabled" [hidden]="this.creditValue.valid">
+          Debes ingresar un valor entre {{ minPayValue | currency: 'COP' : '$': '3.0'}} y {{(creditInfo?.totalPayment - minPayValue) | currency: 'COP' : '$': '3.0'}}
+        </div>
+      </div>
+      <div class="text-center sc-text--center">
+        <button class="btn btn-outline-primary sc-card-content--btn-form qa-btn-submit mr-3"
+        type="button" (click)="eventBackButton.emit()">
+          {{ "btn_back" | mapConfigBase }}
+        </button>
+        <button class="btn btn-primary sc-card-content--btn-form qa-btn-submit ml-3" type="submit"
+        [disabled]="!formPayment.valid">
+          {{ "lbl_continue" | mapConfigLang }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+

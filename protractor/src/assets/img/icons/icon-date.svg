@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23">
+  <defs>
+    <clipPath id="clip-icono_fecha_de_pago_1">
+      <rect width="24" height="23"/>
+    </clipPath>
+  </defs>
+  <g id="icono_fecha_de_pago_1" data-name="icono fecha de pago – 1" clip-path="url(#clip-icono_fecha_de_pago_1)">
+    <g id="Grupo_9266" data-name="Grupo 9266">
+      <g id="Grupo_9204" data-name="Grupo 9204" transform="translate(-338.871 -305.034)">
+        <rect id="Rectángulo_3215" data-name="Rectángulo 3215" width="21.553" height="18.937" rx="1.61" transform="translate(339.871 308.096)" fill="none" stroke="#007aa4" stroke-miterlimit="10" stroke-width="1.2"/>
+        <line id="Línea_156" data-name="Línea 156" y2="4.021" transform="translate(346.342 305.891)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Línea_157" data-name="Línea 157" y2="4.021" transform="translate(355.133 305.891)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Línea_158" data-name="Línea 158" x2="21.553" transform="translate(339.871 313.46)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+      <path id="Trazado_5469" data-name="Trazado 5469" d="M542.1,411.725l2.364,1.613,4.342-5.676" transform="translate(-462.869 -476.344) rotate(9)" fill="none" stroke="#007aa4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

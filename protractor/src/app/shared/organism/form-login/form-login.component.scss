@@ -1,0 +1,56 @@
+@import '../../../../assets/bootstrap/variables';
+.sc-home-control{
+  margin-bottom: 22%;
+}
+
+.sc-login{
+  text-align: center;
+}
+
+.sc-login-validator {
+  label {
+    font-size: 14.4px;
+    color: $danger-home;
+    height: 0;
+  }
+}
+
+.sc-additional-login {
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border: 1px solid $white;
+  border-bottom-style: hidden;
+}
+
+.sc-icons-login{
+  padding-left: 10%;
+  padding-right: 10%;
+  cursor: pointer;
+}
+
+legend{
+  font-size: $sc-font-size-sm;
+  color: $white;
+  width: 50%;
+  font-weight: 500;
+}
+
+
+
+.sc-icon--password-show {
+  filter: brightness(1);
+}
+
+
+.is-focus:focus ~ label{
+  transition: transform 0.2s ease-out;
+  transform: translateY(-15px) scale(0.8);
+  transform-origin: 0 0;
+}
+
+
+::ng-deep .dropdown-item { -webkit-text-fill-color:#000000;}
+::ng-deep .dropdown-item.active, .dropdown-item:active{background-color: #e2e2e2}

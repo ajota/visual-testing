@@ -1,0 +1,4 @@
+[0218/120049.905:ERROR:file_io_win.cc(161)] CreateFile C:\Users\rmena\AppData\Local\Temp\karma-12730018\Crashpad\settings.dat: El sistema no puede encontrar el archivo especificado. (0x2)
+[0218/125305.578:ERROR:file_io_win.cc(161)] CreateFile C:\Users\rmena\AppData\Local\Temp\karma-6729595\Crashpad\settings.dat: El sistema no puede encontrar el archivo especificado. (0x2)
+[0218/131341.592:ERROR:file_io_win.cc(161)] CreateFile C:\Users\rmena\AppData\Local\Temp\karma-27640714\Crashpad\settings.dat: El sistema no puede encontrar el archivo especificado. (0x2)
+[0303/175339.265:ERROR:file_io_win.cc(161)] CreateFile C:\Users\avelez\AppData\Local\Temp\karma-87085903\Crashpad\settings.dat: El sistema no puede encontrar el archivo especificado. (0x2)

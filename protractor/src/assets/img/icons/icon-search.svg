@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="18" viewBox="0 0 17 18">
+  <defs>
+    <clipPath id="clip-icono_buscar">
+      <rect width="17" height="18"/>
+    </clipPath>
+  </defs>
+  <g id="icono_buscar" data-name="icono buscar" clip-path="url(#clip-icono_buscar)">
+    <g id="Grupo_9265" data-name="Grupo 9265" transform="translate(-2499.707 -1846.15)">
+      <g id="Grupo_4253" data-name="Grupo 4253" transform="translate(2499.706 1846.151)">
+        <path id="Trazado_2987" data-name="Trazado 2987" d="M2506.707,1860.152a7,7,0,1,1,7-7A7.009,7.009,0,0,1,2506.707,1860.152Zm0-12.116a5.115,5.115,0,1,0,5.115,5.115A5.121,5.121,0,0,0,2506.707,1848.037Z" transform="translate(-2499.706 -1846.151)" fill="#007aa4"/>
+      </g>
+      <g id="Grupo_4254" data-name="Grupo 4254" transform="translate(2509.808 1856.724)">
+        <path id="Trazado_2988" data-name="Trazado 2988" d="M2547.756,1897.131a.939.939,0,0,1-.667-.276l-4.512-4.512a.943.943,0,0,1,1.333-1.333l4.512,4.512a.943.943,0,0,1-.667,1.609Z" transform="translate(-2542.301 -1890.733)" fill="#007aa4"/>
+      </g>
+    </g>
+  </g>
+</svg>
